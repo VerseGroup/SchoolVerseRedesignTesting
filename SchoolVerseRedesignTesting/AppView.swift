@@ -8,8 +8,34 @@
 import SwiftUI
 
 struct AppView: View {
+    @State private var selection: TabBarItem = .home
+    let tabs: [TabBarItem] = [.home, .tasks, .schedule, .more]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabBarViewBuilder {
+            NavigationView {
+                HomeView()
+            }
+            .tabBarItem(tab: TabBarItem.home, selection: selection)
+            
+            NavigationView {
+                TasksView()
+            }
+            .tabBarItem(tab: TabBarItem.tasks, selection: selection)
+            
+            NavigationView {
+                ScheduleView()
+            }
+            .tabBarItem(tab: TabBarItem.schedule, selection: selection)
+            
+            NavigationView {
+                MoreView()
+            }
+            .tabBarItem(tab: TabBarItem.more, selection: selection)
+            
+        } tabBar: {
+            TabBarView(tabs: tabs, selection: $selection, localSelection: selection)
+        }
     }
 }
 
