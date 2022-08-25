@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		B48EA6F828B7C8E200102E3B /* SchoolVerseRedesignTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */; };
-		B48EA6FA28B7C8E200102E3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA6F928B7C8E200102E3B /* ContentView.swift */; };
 		B48EA6FC28B7C8E700102E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA6FB28B7C8E700102E3B /* Assets.xcassets */; };
 		B48EA6FF28B7C8E700102E3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA6FE28B7C8E700102E3B /* Preview Assets.xcassets */; };
+		B48EA70B28B7CA0E00102E3B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA70A28B7CA0E00102E3B /* AppView.swift */; };
+		B48EA71728B7CB1000102E3B /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA71628B7CB1000102E3B /* RouterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B48EA6F428B7C8E100102E3B /* SchoolVerseRedesignTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolVerseRedesignTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolVerseRedesignTestingApp.swift; sourceTree = "<group>"; };
-		B48EA6F928B7C8E200102E3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B48EA6FB28B7C8E700102E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48EA6FE28B7C8E700102E3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B48EA70A28B7CA0E00102E3B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		B48EA71628B7CB1000102E3B /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,13 @@
 			isa = PBXGroup;
 			children = (
 				B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */,
-				B48EA6F928B7C8E200102E3B /* ContentView.swift */,
+				B48EA70A28B7CA0E00102E3B /* AppView.swift */,
+				B48EA71628B7CB1000102E3B /* RouterView.swift */,
+				B48EA70528B7C95600102E3B /* Extensions */,
+				B48EA70628B7C96200102E3B /* DummyServices */,
+				B48EA70928B7C9B500102E3B /* Pages */,
+				B48EA70828B7C9A300102E3B /* Components */,
+				B48EA70728B7C97400102E3B /* Models */,
 				B48EA6FB28B7C8E700102E3B /* Assets.xcassets */,
 				B48EA6FD28B7C8E700102E3B /* Preview Content */,
 			);
@@ -65,6 +73,121 @@
 				B48EA6FE28B7C8E700102E3B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B48EA70528B7C95600102E3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B48EA70628B7C96200102E3B /* DummyServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DummyServices;
+			sourceTree = "<group>";
+		};
+		B48EA70728B7C97400102E3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B48EA70828B7C9A300102E3B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B48EA70D28B7CA4200102E3B /* TabBar */,
+				B48EA70C28B7CA3C00102E3B /* Banner */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B48EA70928B7C9B500102E3B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				B48EA71128B7CA8F00102E3B /* More */,
+				B48EA71028B7CA8600102E3B /* Tasks */,
+				B48EA70F28B7CA7900102E3B /* Schedule */,
+				B48EA70E28B7CA7000102E3B /* Home */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		B48EA70C28B7CA3C00102E3B /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		B48EA70D28B7CA4200102E3B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B48EA70E28B7CA7000102E3B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B48EA70F28B7CA7900102E3B /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		B48EA71028B7CA8600102E3B /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		B48EA71128B7CA8F00102E3B /* More */ = {
+			isa = PBXGroup;
+			children = (
+				B48EA71528B7CAB000102E3B /* Events */,
+				B48EA71428B7CAAA00102E3B /* Sports */,
+				B48EA71328B7CA9D00102E3B /* Linking */,
+				B48EA71228B7CA9400102E3B /* Menu */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		B48EA71228B7CA9400102E3B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		B48EA71328B7CA9D00102E3B /* Linking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Linking;
+			sourceTree = "<group>";
+		};
+		B48EA71428B7CAAA00102E3B /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		B48EA71528B7CAB000102E3B /* Events */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Events;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48EA6FA28B7C8E200102E3B /* ContentView.swift in Sources */,
+				B48EA71728B7CB1000102E3B /* RouterView.swift in Sources */,
 				B48EA6F828B7C8E200102E3B /* SchoolVerseRedesignTestingApp.swift in Sources */,
+				B48EA70B28B7CA0E00102E3B /* AppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
