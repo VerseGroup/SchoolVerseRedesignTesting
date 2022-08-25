@@ -57,12 +57,14 @@ extension TabBarView {
             .foregroundColor(localSelection == tab ? Color.app.secondary : Color.app.text)
             .padding(.vertical, 7.0)
             .frame(maxWidth: .infinity)
+            .frame(height: 50)
             .background(
                 ZStack {
                     if localSelection == tab {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color.accent.cyan)
                             .matchedGeometryEffect(id: "background_rectangle", in: namespace)
+                            .frame(width: 60, height: 60)
                     }
                 }
             )
@@ -71,11 +73,15 @@ extension TabBarView {
     
     private var tabBar: some View {
         HStack {
+            Spacer()
+            
             ForEach(tabs, id: \.self) { tab in
                 tabView(tab: tab)
                     .onTapGesture {
                         switchToTab(tab: tab)
                     }
+                
+                Spacer()
             }
         }
         .padding(.top, 15.0)

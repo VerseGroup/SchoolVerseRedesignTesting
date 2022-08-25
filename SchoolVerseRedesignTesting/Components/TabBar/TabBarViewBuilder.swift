@@ -22,7 +22,7 @@ struct TabBarViewBuilder<Content:View, TabBar: View>: View {
     let tabBar: TabBar
     
     public init(
-        style: DisplayStyle = .vStack,
+        style: DisplayStyle = .zStack,
         @ViewBuilder content: () -> Content,
         @ViewBuilder tabBar: () -> TabBar) {
         self.style = style
