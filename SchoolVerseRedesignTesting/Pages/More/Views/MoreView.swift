@@ -8,43 +8,59 @@
 import SwiftUI
 
 struct MoreView: View {
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
+    
     var body: some View {
         ZStack {
             Color.app.screen
                 .ignoresSafeArea()
             
             ScrollView(showsIndicators: false) {
-                VStack(alignment: .leading, spacing: 30) {
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                LazyVGrid(columns: columns, spacing: 20) {
+                    NavigationLink {
+                        AccountView()
+                    } label: {
+                        MoreInfoCardView(imageName: "person.text.rectangle", name: "Account")
+                    }
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    NavigationLink {
+                        MenuView()
+                    } label: {
+                        MoreInfoCardView(imageName: "menucard", name: "Menu")
+                    }
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    NavigationLink {
+                        SportsView()
+                    } label: {
+                        MoreInfoCardView(imageName: "sportscourt", name: "Sports")
+                    }
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    NavigationLink {
+                        EventsView()
+                    } label: {
+                        MoreInfoCardView(imageName: "calendar.badge.exclamationmark", name: "Events")
+                    }
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    NavigationLink {
+                        LinkedAccountsView()
+                    } label: {
+                        MoreInfoCardView(imageName: "link.badge.plus", name: "Linking")
+                    }
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    NavigationLink {
+                        AboutView()
+                    } label: {
+                        MoreInfoCardView(imageName: "info.circle.fill", name: "About")
+                    }
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
-                    
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
-                    
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
-                    
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    Spacer()
+                        .frame(height: 50)
                 }
+                .padding(.horizontal, 15)
             }
             .navigationTitle("More")
         }

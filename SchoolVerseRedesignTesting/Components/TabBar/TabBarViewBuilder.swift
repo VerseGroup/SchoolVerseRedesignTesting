@@ -5,6 +5,8 @@
 //  Created by Steven Yu on 5/23/22.
 //
 
+// TODO: Fix bug  for .vStack Display Style causing the tab bar bug
+
 import SwiftUI
 
 /// Custom tab bar with lazy loading.
@@ -44,6 +46,7 @@ struct TabBarViewBuilder<Content:View, TabBar: View>: View {
                 //.frame(maxWidth: .infinity, maxHeight: .infinity)
                 
                 tabBar
+                    .foregroundColor(Color.app.screen)
             }
         case .zStack:
             ZStack(alignment: .bottom) {

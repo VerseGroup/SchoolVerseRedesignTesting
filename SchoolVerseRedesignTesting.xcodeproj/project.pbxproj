@@ -21,6 +21,23 @@
 		B4A45CE628B7E40500074739 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45CE528B7E40500074739 /* ScheduleView.swift */; };
 		B4A45CE828B7E41100074739 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45CE728B7E41100074739 /* MoreView.swift */; };
 		B4A45CEA28B7FA2800074739 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45CE928B7FA2800074739 /* Color.swift */; };
+		B4A45CEE28B83C3E00074739 /* MoreInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45CED28B83C3D00074739 /* MoreInfoCardView.swift */; };
+		B4A45D0128B844F000074739 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D0028B844F000074739 /* AccountView.swift */; };
+		B4A45D0328B8450200074739 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D0228B8450200074739 /* MenuView.swift */; };
+		B4A45D0528B8450D00074739 /* SportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D0428B8450D00074739 /* SportsView.swift */; };
+		B4A45D0728B8452000074739 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D0628B8452000074739 /* EventsView.swift */; };
+		B4A45D0B28B8454100074739 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D0A28B8454100074739 /* AboutView.swift */; };
+		B4A45D0F28B8742D00074739 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D0E28B8742C00074739 /* TitleLabel.swift */; };
+		B4A45D1128B8816800074739 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D1028B8816700074739 /* HeaderLabel.swift */; };
+		B4A45D1328B8820E00074739 /* SubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D1228B8820E00074739 /* SubtitleLabel.swift */; };
+		B4A45D1528B8838000074739 /* LinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D1428B8838000074739 /* LinkLabel.swift */; };
+		B4A45D1728B887D100074739 /* ParagraphLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D1628B887D100074739 /* ParagraphLabel.swift */; };
+		B4A45D1A28B88FB300074739 /* TextFieldWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D1928B88FB300074739 /* TextFieldWithTitle.swift */; };
+		B4A45D1C28B893CD00074739 /* DestructiveButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D1B28B893CD00074739 /* DestructiveButtonLabel.swift */; };
+		B4A45D1E28B8955100074739 /* LinkedAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D1D28B8955100074739 /* LinkedAccountsView.swift */; };
+		B4A45D2028B8964900074739 /* NavigationLinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D1F28B8964900074739 /* NavigationLinkLabel.swift */; };
+		B4A45D2228B936FB00074739 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2128B936FB00074739 /* AccountsViewModel.swift */; };
+		B4A45D2428B93DBB00074739 /* UserColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2328B93DBB00074739 /* UserColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +56,23 @@
 		B4A45CE528B7E40500074739 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		B4A45CE728B7E41100074739 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		B4A45CE928B7FA2800074739 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B4A45CED28B83C3D00074739 /* MoreInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoCardView.swift; sourceTree = "<group>"; };
+		B4A45D0028B844F000074739 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		B4A45D0228B8450200074739 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		B4A45D0428B8450D00074739 /* SportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsView.swift; sourceTree = "<group>"; };
+		B4A45D0628B8452000074739 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		B4A45D0A28B8454100074739 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B4A45D0E28B8742C00074739 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		B4A45D1028B8816700074739 /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
+		B4A45D1228B8820E00074739 /* SubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleLabel.swift; sourceTree = "<group>"; };
+		B4A45D1428B8838000074739 /* LinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkLabel.swift; sourceTree = "<group>"; };
+		B4A45D1628B887D100074739 /* ParagraphLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphLabel.swift; sourceTree = "<group>"; };
+		B4A45D1928B88FB300074739 /* TextFieldWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitle.swift; sourceTree = "<group>"; };
+		B4A45D1B28B893CD00074739 /* DestructiveButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestructiveButtonLabel.swift; sourceTree = "<group>"; };
+		B4A45D1D28B8955100074739 /* LinkedAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAccountsView.swift; sourceTree = "<group>"; };
+		B4A45D1F28B8964900074739 /* NavigationLinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkLabel.swift; sourceTree = "<group>"; };
+		B4A45D2128B936FB00074739 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
+		B4A45D2328B93DBB00074739 /* UserColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +145,7 @@
 		B48EA70728B7C97400102E3B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B4A45D2328B93DBB00074739 /* UserColor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,8 +153,11 @@
 		B48EA70828B7C9A300102E3B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B4A45D1828B88D6900074739 /* Labels */,
 				B48EA70D28B7CA4200102E3B /* TabBar */,
 				B48EA70C28B7CA3C00102E3B /* Banner */,
+				B4A45CED28B83C3D00074739 /* MoreInfoCardView.swift */,
+				B4A45D1928B88FB300074739 /* TextFieldWithTitle.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -185,10 +223,11 @@
 			children = (
 				B4A45CD928B7E34100074739 /* Views */,
 				B4A45CDA28B7E34C00074739 /* ViewModels */,
-				B48EA71528B7CAB000102E3B /* Events */,
-				B48EA71428B7CAAA00102E3B /* Sports */,
-				B48EA71328B7CA9D00102E3B /* Linking */,
+				B4A45CEB28B83AD200074739 /* Account */,
 				B48EA71228B7CA9400102E3B /* Menu */,
+				B48EA71428B7CAAA00102E3B /* Sports */,
+				B48EA71528B7CAB000102E3B /* Events */,
+				B4A45CF128B8442700074739 /* About */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -196,20 +235,17 @@
 		B48EA71228B7CA9400102E3B /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				B4A45CF528B8449200074739 /* Views */,
+				B4A45CF428B8448A00074739 /* ViewModels */,
 			);
 			path = Menu;
-			sourceTree = "<group>";
-		};
-		B48EA71328B7CA9D00102E3B /* Linking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Linking;
 			sourceTree = "<group>";
 		};
 		B48EA71428B7CAAA00102E3B /* Sports */ = {
 			isa = PBXGroup;
 			children = (
+				B4A45CF728B844A100074739 /* Views */,
+				B4A45CF628B8449B00074739 /* ViewModels */,
 			);
 			path = Sports;
 			sourceTree = "<group>";
@@ -217,6 +253,8 @@
 		B48EA71528B7CAB000102E3B /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				B4A45CF928B844AD00074739 /* Views */,
+				B4A45CF828B844A500074739 /* ViewModels */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -279,6 +317,115 @@
 				B4A45CE128B7E3D200074739 /* HomeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B4A45CEB28B83AD200074739 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				B4A45CF228B8445800074739 /* Views */,
+				B4A45CF328B8446600074739 /* ViewModels */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		B4A45CF128B8442700074739 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				B4A45CFD28B844C600074739 /* Views */,
+				B4A45CFC28B844BE00074739 /* ViewModels */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		B4A45CF228B8445800074739 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4A45D0028B844F000074739 /* AccountView.swift */,
+				B4A45D1D28B8955100074739 /* LinkedAccountsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4A45CF328B8446600074739 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B4A45D2128B936FB00074739 /* AccountsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B4A45CF428B8448A00074739 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B4A45CF528B8449200074739 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4A45D0228B8450200074739 /* MenuView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4A45CF628B8449B00074739 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B4A45CF728B844A100074739 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4A45D0428B8450D00074739 /* SportsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4A45CF828B844A500074739 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B4A45CF928B844AD00074739 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4A45D0628B8452000074739 /* EventsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4A45CFC28B844BE00074739 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B4A45CFD28B844C600074739 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4A45D0A28B8454100074739 /* AboutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4A45D1828B88D6900074739 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				B4A45D1028B8816700074739 /* HeaderLabel.swift */,
+				B4A45D1428B8838000074739 /* LinkLabel.swift */,
+				B4A45D1628B887D100074739 /* ParagraphLabel.swift */,
+				B4A45D1228B8820E00074739 /* SubtitleLabel.swift */,
+				B4A45D0E28B8742C00074739 /* TitleLabel.swift */,
+				B4A45D1B28B893CD00074739 /* DestructiveButtonLabel.swift */,
+				B4A45D1F28B8964900074739 /* NavigationLinkLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,18 +498,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A45D1528B8838000074739 /* LinkLabel.swift in Sources */,
 				B48EA71728B7CB1000102E3B /* RouterView.swift in Sources */,
 				B4A45CE428B7E3EA00074739 /* TasksView.swift in Sources */,
 				B48EA6F828B7C8E200102E3B /* SchoolVerseRedesignTestingApp.swift in Sources */,
+				B4A45D1C28B893CD00074739 /* DestructiveButtonLabel.swift in Sources */,
+				B4A45D0B28B8454100074739 /* AboutView.swift in Sources */,
+				B4A45D1328B8820E00074739 /* SubtitleLabel.swift in Sources */,
 				B4A45CD828B7E27E00074739 /* TabBarView.swift in Sources */,
+				B4A45D1A28B88FB300074739 /* TextFieldWithTitle.swift in Sources */,
 				B4A45CD628B7E23300074739 /* TabBarViewBuilder.swift in Sources */,
+				B4A45D1128B8816800074739 /* HeaderLabel.swift in Sources */,
+				B4A45D1728B887D100074739 /* ParagraphLabel.swift in Sources */,
 				B4A45CEA28B7FA2800074739 /* Color.swift in Sources */,
+				B4A45D2028B8964900074739 /* NavigationLinkLabel.swift in Sources */,
 				B4A45CE628B7E40500074739 /* ScheduleView.swift in Sources */,
 				B48EA71928B7DFC000102E3B /* TabBarItem.swift in Sources */,
 				B4A45CE228B7E3D200074739 /* HomeView.swift in Sources */,
+				B4A45D0328B8450200074739 /* MenuView.swift in Sources */,
+				B4A45D0128B844F000074739 /* AccountView.swift in Sources */,
 				B48EA70B28B7CA0E00102E3B /* AppView.swift in Sources */,
+				B4A45D2428B93DBB00074739 /* UserColor.swift in Sources */,
+				B4A45D0528B8450D00074739 /* SportsView.swift in Sources */,
+				B4A45D1E28B8955100074739 /* LinkedAccountsView.swift in Sources */,
+				B4A45CEE28B83C3E00074739 /* MoreInfoCardView.swift in Sources */,
 				B4A45CE828B7E41100074739 /* MoreView.swift in Sources */,
+				B4A45D0F28B8742D00074739 /* TitleLabel.swift in Sources */,
 				B4A45CD428B7E17400074739 /* TabBarItemViewModifier.swift in Sources */,
+				B4A45D2228B936FB00074739 /* AccountsViewModel.swift in Sources */,
+				B4A45D0728B8452000074739 /* EventsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

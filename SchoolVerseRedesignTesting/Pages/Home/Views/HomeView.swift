@@ -42,8 +42,8 @@ struct HomeView: View {
                     Text("Welcome to SchoolVerse")
                         .font(.largeTitle)
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    Spacer()
+                        .frame(height: 50)
                 }
             }
             .navigationTitle("Hello, Daniel")
