@@ -38,6 +38,13 @@
 		B4A45D2028B8964900074739 /* NavigationLinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D1F28B8964900074739 /* NavigationLinkLabel.swift */; };
 		B4A45D2228B936FB00074739 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2128B936FB00074739 /* AccountsViewModel.swift */; };
 		B4A45D2428B93DBB00074739 /* UserColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2328B93DBB00074739 /* UserColor.swift */; };
+		B4A45D2628B9B89B00074739 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2528B9B89A00074739 /* Schedule.swift */; };
+		B4A45D2828B9BEF800074739 /* DaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2728B9BEF800074739 /* DaySchedule.swift */; };
+		B4A45D2A28B9BF1600074739 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2928B9BF1600074739 /* Period.swift */; };
+		B4A45D2C28B9BF5C00074739 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2B28B9BF5C00074739 /* Class.swift */; };
+		B4A45D2E28B9E7E100074739 /* SVUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2D28B9E7E100074739 /* SVUser.swift */; };
+		B4A45D3028BA525100074739 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2F28BA525100074739 /* Event.swift */; };
+		B4A45D3228BA55CB00074739 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3128BA55CB00074739 /* UserRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +80,13 @@
 		B4A45D1F28B8964900074739 /* NavigationLinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkLabel.swift; sourceTree = "<group>"; };
 		B4A45D2128B936FB00074739 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
 		B4A45D2328B93DBB00074739 /* UserColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserColor.swift; sourceTree = "<group>"; };
+		B4A45D2528B9B89A00074739 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		B4A45D2728B9BEF800074739 /* DaySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedule.swift; sourceTree = "<group>"; };
+		B4A45D2928B9BF1600074739 /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
+		B4A45D2B28B9BF5C00074739 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		B4A45D2D28B9E7E100074739 /* SVUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVUser.swift; sourceTree = "<group>"; };
+		B4A45D2F28BA525100074739 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B4A45D3128BA55CB00074739 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +152,7 @@
 		B48EA70628B7C96200102E3B /* DummyServices */ = {
 			isa = PBXGroup;
 			children = (
+				B4A45D3128BA55CB00074739 /* UserRepository.swift */,
 			);
 			path = DummyServices;
 			sourceTree = "<group>";
@@ -146,6 +161,12 @@
 			isa = PBXGroup;
 			children = (
 				B4A45D2328B93DBB00074739 /* UserColor.swift */,
+				B4A45D2528B9B89A00074739 /* Schedule.swift */,
+				B4A45D2728B9BEF800074739 /* DaySchedule.swift */,
+				B4A45D2928B9BF1600074739 /* Period.swift */,
+				B4A45D2B28B9BF5C00074739 /* Class.swift */,
+				B4A45D2D28B9E7E100074739 /* SVUser.swift */,
+				B4A45D2F28BA525100074739 /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -500,6 +521,7 @@
 			files = (
 				B4A45D1528B8838000074739 /* LinkLabel.swift in Sources */,
 				B48EA71728B7CB1000102E3B /* RouterView.swift in Sources */,
+				B4A45D3228BA55CB00074739 /* UserRepository.swift in Sources */,
 				B4A45CE428B7E3EA00074739 /* TasksView.swift in Sources */,
 				B48EA6F828B7C8E200102E3B /* SchoolVerseRedesignTestingApp.swift in Sources */,
 				B4A45D1C28B893CD00074739 /* DestructiveButtonLabel.swift in Sources */,
@@ -508,15 +530,21 @@
 				B4A45CD828B7E27E00074739 /* TabBarView.swift in Sources */,
 				B4A45D1A28B88FB300074739 /* TextFieldWithTitle.swift in Sources */,
 				B4A45CD628B7E23300074739 /* TabBarViewBuilder.swift in Sources */,
+				B4A45D2A28B9BF1600074739 /* Period.swift in Sources */,
 				B4A45D1128B8816800074739 /* HeaderLabel.swift in Sources */,
+				B4A45D2C28B9BF5C00074739 /* Class.swift in Sources */,
 				B4A45D1728B887D100074739 /* ParagraphLabel.swift in Sources */,
 				B4A45CEA28B7FA2800074739 /* Color.swift in Sources */,
+				B4A45D2828B9BEF800074739 /* DaySchedule.swift in Sources */,
 				B4A45D2028B8964900074739 /* NavigationLinkLabel.swift in Sources */,
 				B4A45CE628B7E40500074739 /* ScheduleView.swift in Sources */,
 				B48EA71928B7DFC000102E3B /* TabBarItem.swift in Sources */,
+				B4A45D3028BA525100074739 /* Event.swift in Sources */,
 				B4A45CE228B7E3D200074739 /* HomeView.swift in Sources */,
 				B4A45D0328B8450200074739 /* MenuView.swift in Sources */,
+				B4A45D2628B9B89B00074739 /* Schedule.swift in Sources */,
 				B4A45D0128B844F000074739 /* AccountView.swift in Sources */,
+				B4A45D2E28B9E7E100074739 /* SVUser.swift in Sources */,
 				B48EA70B28B7CA0E00102E3B /* AppView.swift in Sources */,
 				B4A45D2428B93DBB00074739 /* UserColor.swift in Sources */,
 				B4A45D0528B8450D00074739 /* SportsView.swift in Sources */,
