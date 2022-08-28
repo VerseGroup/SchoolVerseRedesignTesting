@@ -20,7 +20,10 @@ struct PeriodTileAndHeader: View {
                     .font(.caption)
                 
                 Text(periodInfo.classInfo.title)
-                    .font(.headline)
+                    .font(
+                        periodInfo.classInfo.title == "Lunch" ||
+                        periodInfo.classInfo.title == "Free Period!"
+                        ? .title : .headline)
                     .fontWeight(.semibold)
                 
                 HStack {
@@ -65,7 +68,7 @@ struct PeriodTileAndHeader_Previews: PreviewProvider {
                 PeriodTileAndHeader(
                     periodInfo: Period(
                         classInfo:
-                            Class(title: "POST-AP MOBILE APP DEVELOPMENT - MINOR -1", teacher: "Mrs. Tranchida", room: "G201", color: .purple),
+                            Class(title: "Lunch", color: .none),
                         description: "Period 5",
                         start: "2:10",
                         end: "3:10")

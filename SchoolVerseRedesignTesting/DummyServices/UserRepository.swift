@@ -29,11 +29,11 @@ class UserRepository: ObservableObject {
     private var yearbook: Class = Class(title: "YEARBOOK COMMITTEE", teacher: "Ms. Bottalico", room: "Photo Room", color: .lime)
     
     //Other Periods
-    private var free: Class = Class(title: "Free", color: .none)
+    private var free: Class = Class(title: "Free Period!", color: .none)
     private var homeroom: Class = Class(title: "HOMEROOM", teacher: "Mr. Sykes", room: "G108", color: .none)
-    private var advisory: Class = Class(title: "Advisory", teacher: "Mr. Francis", room: "G113", color: .none)
-    private var gradeMeeting: Class = Class(title: "Grade Meeting", color: .none)
-    private var assembly: Class = Class(title: "Assembly", color: .none)
+    private var advisory: Class = Class(title: "ADVISORY", teacher: "Mr. Francis", room: "G113", color: .none)
+    private var gradeMeeting: Class = Class(title: "GRADE MEETING", color: .none)
+    private var assembly: Class = Class(title: "ASSEMBLY", color: .none)
     private var lunch: Class = Class(title: "Lunch", color: .none)
     
     init() {
