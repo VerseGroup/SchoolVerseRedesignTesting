@@ -11,23 +11,30 @@ import SwiftUI
 class UserRepository: ObservableObject {
     
     //Classes and Activies
-    private var homeroom: Class = Class(title: "HOMEROOM", teacher: "Mr. Sykes", room: "G108")
-    private var english: Class = Class(title: "ENGLISH 12 - PANOPTICON PRIME -3", teacher: "Mr. Lobko", room: "R124")
-    private var dataScience: Class = Class(title: "POST-AP DATA ANALYTICS & VISUALIZATION - MAJOR -1", teacher: "Mr. Shaw", room: "G207")
-    private var physics: Class = Class(title: "ADVANCED PHYSICS -2", teacher: "Mr. Karpinski", room: "S018")
-    private var calcBC: Class = Class(title: "AP CALCULUS (BC) -1", teacher: "Ms. Kaplan", room: "R214")
-    private var stats: Class = Class(title: "AP STATISTICS -3", teacher: "Ms. Richardson", room: "R215")
-    private var jazz: Class =  Class(title: "JAZZ COMBOS", teacher: "Dr. Malkiel", room: "Band Room 1")
-    private var appDev: Class = Class(title: "POST-AP MOBILE APP DEVELOPMENT - MINOR -1", teacher: "Mrs. Tranchida", room: "G201")
-    private var csClub: Class = Class(title: "HACKLEY CS CLUB", room: "G201")
-    private var mpClub: Class = Class(title: "MUSIC PRODUCTION CLUB", room: "G201")
-    private var yearbook: Class = Class(title: "YEARBOOK COMMITTEE", teacher: "Ms. Bottalico", room: "Photo Room")
     
-    private var free: Class = Class(title: "Free")
-    private var advisory: Class = Class(title: "Advisory", teacher: "Mr. Francis", room: "G113")
-    private var gradeMeeting: Class = Class(title: "Grade Meeting")
-    private var assembly: Class = Class(title: "Assembly")
-    private var lunch: Class = Class(title: "Lunch")
+    //Majors
+    private var english: Class = Class(title: "ENGLISH 12 - PANOPTICON PRIME -3", teacher: "Mr. Lobko", room: "R124", color: .yellow)
+    private var dataScience: Class = Class(title: "POST-AP DATA ANALYTICS & VISUALIZATION - MAJOR -1", teacher: "Mr. Shaw", room: "G207", color: .green)
+    private var physics: Class = Class(title: "ADVANCED PHYSICS -2", teacher: "Mr. Karpinski", room: "S018", color: .blue)
+    private var calcBC: Class = Class(title: "AP CALCULUS (BC) -1", teacher: "Ms. Kaplan", room: "R214", color: .lightBlue)
+    private var stats: Class = Class(title: "AP STATISTICS -3", teacher: "Ms. Richardson", room: "R215", color: .red)
+    
+    //Minors
+    private var jazz: Class =  Class(title: "JAZZ COMBOS", teacher: "Dr. Malkiel", room: "Band Room 1", color: .orange)
+    private var appDev: Class = Class(title: "POST-AP MOBILE APP DEVELOPMENT - MINOR -1", teacher: "Mrs. Tranchida", room: "G201", color: .purple)
+    
+    //Clubs
+    private var csClub: Class = Class(title: "HACKLEY CS CLUB", room: "G201", color: .lime)
+    private var mpClub: Class = Class(title: "MUSIC PRODUCTION CLUB", room: "G201", color: .lime)
+    private var yearbook: Class = Class(title: "YEARBOOK COMMITTEE", teacher: "Ms. Bottalico", room: "Photo Room", color: .lime)
+    
+    //Other Periods
+    private var free: Class = Class(title: "Free", color: .none)
+    private var homeroom: Class = Class(title: "HOMEROOM", teacher: "Mr. Sykes", room: "G108", color: .none)
+    private var advisory: Class = Class(title: "Advisory", teacher: "Mr. Francis", room: "G113", color: .none)
+    private var gradeMeeting: Class = Class(title: "Grade Meeting", color: .none)
+    private var assembly: Class = Class(title: "Assembly", color: .none)
+    private var lunch: Class = Class(title: "Lunch", color: .none)
     
     init() {
         //Day 1

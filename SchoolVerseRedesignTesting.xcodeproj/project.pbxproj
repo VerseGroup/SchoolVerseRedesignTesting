@@ -45,6 +45,8 @@
 		B4A45D2E28B9E7E100074739 /* SVUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2D28B9E7E100074739 /* SVUser.swift */; };
 		B4A45D3028BA525100074739 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D2F28BA525100074739 /* Event.swift */; };
 		B4A45D3228BA55CB00074739 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3128BA55CB00074739 /* UserRepository.swift */; };
+		B4A45D3428BA761100074739 /* DayScheduleTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3328BA761000074739 /* DayScheduleTile.swift */; };
+		B4A45D3628BABA7500074739 /* PeriodTileAndHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		B4A45D2D28B9E7E100074739 /* SVUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVUser.swift; sourceTree = "<group>"; };
 		B4A45D2F28BA525100074739 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B4A45D3128BA55CB00074739 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		B4A45D3328BA761000074739 /* DayScheduleTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayScheduleTile.swift; sourceTree = "<group>"; };
+		B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodTileAndHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,9 +128,9 @@
 				B48EA71628B7CB1000102E3B /* RouterView.swift */,
 				B48EA70528B7C95600102E3B /* Extensions */,
 				B48EA70628B7C96200102E3B /* DummyServices */,
+				B48EA70728B7C97400102E3B /* Models */,
 				B48EA70928B7C9B500102E3B /* Pages */,
 				B48EA70828B7C9A300102E3B /* Components */,
-				B48EA70728B7C97400102E3B /* Models */,
 				B48EA6FB28B7C8E700102E3B /* Assets.xcassets */,
 				B48EA6FD28B7C8E700102E3B /* Preview Content */,
 			);
@@ -179,6 +183,8 @@
 				B48EA70C28B7CA3C00102E3B /* Banner */,
 				B4A45CED28B83C3D00074739 /* MoreInfoCardView.swift */,
 				B4A45D1928B88FB300074739 /* TextFieldWithTitle.swift */,
+				B4A45D3328BA761000074739 /* DayScheduleTile.swift */,
+				B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -536,8 +542,10 @@
 				B4A45D1728B887D100074739 /* ParagraphLabel.swift in Sources */,
 				B4A45CEA28B7FA2800074739 /* Color.swift in Sources */,
 				B4A45D2828B9BEF800074739 /* DaySchedule.swift in Sources */,
+				B4A45D3628BABA7500074739 /* PeriodTileAndHeader.swift in Sources */,
 				B4A45D2028B8964900074739 /* NavigationLinkLabel.swift in Sources */,
 				B4A45CE628B7E40500074739 /* ScheduleView.swift in Sources */,
+				B4A45D3428BA761100074739 /* DayScheduleTile.swift in Sources */,
 				B48EA71928B7DFC000102E3B /* TabBarItem.swift in Sources */,
 				B4A45D3028BA525100074739 /* Event.swift in Sources */,
 				B4A45CE228B7E3D200074739 /* HomeView.swift in Sources */,

@@ -13,5 +13,5 @@ struct DaySchedule {
     
     var date: Date
     
-    var periods: [Period]
+    var periods: [Period]?
 }
