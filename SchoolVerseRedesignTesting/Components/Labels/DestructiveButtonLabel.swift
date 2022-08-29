@@ -14,12 +14,12 @@ struct DestructiveButtonLabel: View {
         Text(name)
             .fontWeight(.bold)
             .font(.headline)
-            .foregroundColor(Color.red)
+            .foregroundColor(Color.white)
             .padding()
             .frame(maxWidth: .infinity)
             .background(
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.app.secondary)
+                    .fill(Color.red)
             )
     }
 }

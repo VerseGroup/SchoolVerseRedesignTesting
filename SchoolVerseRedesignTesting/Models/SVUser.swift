@@ -12,6 +12,7 @@ struct SVUser {
     var id: UUID = UUID()
     var name: String
     var preferredFirst: String
+    var grade: Int
     
     var lightTheme: LightTheme
     var accentColor: AccentColor

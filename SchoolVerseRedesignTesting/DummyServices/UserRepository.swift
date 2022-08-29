@@ -43,14 +43,14 @@ class UserRepository: ObservableObject {
                 description: "Day 1",
                 date: Date(),
                 periods: [
-                    Period(classInfo: homeroom, description: "Homeroom", start: "8:10", end: "8:20"),
-                    Period(classInfo: physics, description: "Period 1", start: "8:20", end: "9:35"),
-                    Period(classInfo: advisory, description: "Morning Assembly", start: "9:35", end: "9:55"),
-                    Period(classInfo: english, description: "Period 2", start: "9:55", end: "10:55"),
-                    Period(classInfo: dataScience, description: "Period 3", start: "11:00", end: "12:00"),
-                    Period(classInfo: lunch, description: "Lunch and Collaborative Time", start: "12:00", end: "1:00"),
-                    Period(classInfo: free, description: "Period 4", start: "1:05", end: "2:05"),
-                    Period(classInfo: appDev, description: "Period 5", start: "2:10", end: "3:10")
+                    Period(classInfo: homeroom, order: .homeroom, start: "8:10", end: "8:20"),
+                    Period(classInfo: physics, order: .period1, start: "8:20", end: "9:35"),
+                    Period(classInfo: advisory, order: .morningAssembly, start: "9:35", end: "9:55"),
+                    Period(classInfo: english, order: .period2, start: "9:55", end: "10:55"),
+                    Period(classInfo: dataScience, order: .period3, start: "11:00", end: "12:00"),
+                    Period(classInfo: lunch, order: .lunch, start: "12:00", end: "1:00"),
+                    Period(classInfo: free, order: .period4, start: "1:05", end: "2:05"),
+                    Period(classInfo: appDev, order: .period4, start: "2:10", end: "3:10")
                 ])
         
         //Day 2
@@ -59,14 +59,14 @@ class UserRepository: ObservableObject {
                 description: "Day 2",
                 date: Date(),
                 periods: [
-                    Period(classInfo: homeroom, description: "Homeroom", start: "8:10", end: "8:20"),
-                    Period(classInfo: free, description: "Period 1", start: "8:20", end: "9:20"),
-                    Period(classInfo: assembly, description: "Morning Assembly", start: "9:20", end: "9:55"),
-                    Period(classInfo: calcBC, description: "Period 2", start: "9:55", end: "10:55"),
-                    Period(classInfo: free, description: "Period 3", start: "11:00", end: "12:15"),
-                    Period(classInfo: lunch, description: "Lunch and Collaborative Time", start: "12:15", end: "1:00"),
-                    Period(classInfo: stats, description: "Period 4", start: "1:05", end: "2:05"),
-                    Period(classInfo: english, description: "Period 5", start: "2:10", end: "3:10")
+                    Period(classInfo: homeroom, order: .homeroom, start: "8:10", end: "8:20"),
+                    Period(classInfo: free, order: .period1, start: "8:20", end: "9:20"),
+                    Period(classInfo: assembly, order: .morningAssembly, start: "9:20", end: "9:55"),
+                    Period(classInfo: calcBC, order: .period2, start: "9:55", end: "10:55"),
+                    Period(classInfo: free, order: .period3, start: "11:00", end: "12:15"),
+                    Period(classInfo: lunch, order: .lunch, start: "12:15", end: "1:00"),
+                    Period(classInfo: stats, order: .period4, start: "1:05", end: "2:05"),
+                    Period(classInfo: english, order: .period5, start: "2:10", end: "3:10")
                 ])
         
         //Day 3
@@ -75,14 +75,14 @@ class UserRepository: ObservableObject {
                 description: "Day 3",
                 date: Date(),
                 periods: [
-                    Period(classInfo: homeroom, description: "Homeroom", start: "8:10", end: "8:20"),
-                    Period(classInfo: jazz, description: "Period 1", start: "8:20", end: "9:35"),
-                    Period(classInfo: mpClub, description: "Morning Assembly", start: "9:35", end: "9:55"),
-                    Period(classInfo: physics, description: "Period 2", start: "9:55", end: "10:55"),
-                    Period(classInfo: english, description: "Period 3", start: "11:00", end: "12:00"),
-                    Period(classInfo: lunch, description: "Lunch and Collaborative Time", start: "12:00", end: "1:00"),
-                    Period(classInfo: dataScience, description: "Period 4", start: "1:05", end: "2:05"),
-                    Period(classInfo: calcBC, description: "Period 5", start: "2:10", end: "3:10")
+                    Period(classInfo: homeroom, order: .homeroom, start: "8:10", end: "8:20"),
+                    Period(classInfo: jazz, order: .period1, start: "8:20", end: "9:35"),
+                    Period(classInfo: mpClub, order: .morningAssembly, start: "9:35", end: "9:55"),
+                    Period(classInfo: physics, order: .period2, start: "9:55", end: "10:55"),
+                    Period(classInfo: english, order: .period3, start: "11:00", end: "12:00"),
+                    Period(classInfo: lunch, order: .lunch, start: "12:00", end: "1:00"),
+                    Period(classInfo: dataScience, order: .period4, start: "1:05", end: "2:05"),
+                    Period(classInfo: calcBC,order: .period5, start: "2:10", end: "3:10")
                 ])
         
         //Day 4
@@ -91,14 +91,14 @@ class UserRepository: ObservableObject {
                 description: "Day 2",
                 date: Date(),
                 periods: [
-                    Period(classInfo: homeroom, description: "Homeroom", start: "8:10", end: "8:20"),
-                    Period(classInfo: stats, description: "Period 1", start: "8:20", end: "9:20"),
-                    Period(classInfo: gradeMeeting, description: "Morning Assembly", start: "9:20", end: "9:55"),
-                    Period(classInfo: free, description: "Period 2", start: "9:55", end: "10:55"),
-                    Period(classInfo: calcBC, description: "Period 3", start: "11:00", end: "12:15"),
-                    Period(classInfo: lunch, description: "Lunch and Collaborative Time", start: "12:15", end: "1:00"),
-                    Period(classInfo: appDev, description: "Period 4", start: "1:05", end: "2:05"),
-                    Period(classInfo: physics, description: "Period 5", start: "2:10", end: "3:10")
+                    Period(classInfo: homeroom, order: .homeroom, start: "8:10", end: "8:20"),
+                    Period(classInfo: stats, order: .period1, start: "8:20", end: "9:20"),
+                    Period(classInfo: gradeMeeting, order: .morningAssembly, start: "9:20", end: "9:55"),
+                    Period(classInfo: free, order: .period2, start: "9:55", end: "10:55"),
+                    Period(classInfo: calcBC, order: .period3, start: "11:00", end: "12:15"),
+                    Period(classInfo: lunch, order: .lunch, start: "12:15", end: "1:00"),
+                    Period(classInfo: appDev, order: .period4, start: "1:05", end: "2:05"),
+                    Period(classInfo: physics, order: .period5, start: "2:10", end: "3:10")
                 ])
         
         //Day 5
@@ -107,14 +107,14 @@ class UserRepository: ObservableObject {
                 description: "Day 3",
                 date: Date(),
                 periods: [
-                    Period(classInfo: homeroom, description: "Homeroom", start: "8:10", end: "8:20"),
-                    Period(classInfo: dataScience, description: "Period 1", start: "8:20", end: "9:35"),
-                    Period(classInfo: free, description: "Morning Assembly", start: "9:35", end: "9:55"),
-                    Period(classInfo: free, description: "Period 2", start: "9:55", end: "10:55"),
-                    Period(classInfo: physics, description: "Period 3", start: "11:00", end: "12:00"),
-                    Period(classInfo: lunch, description: "Lunch and Collaborative Time", start: "12:00", end: "1:00"),
-                    Period(classInfo: english, description: "Period 4", start: "1:05", end: "2:05"),
-                    Period(classInfo: free, description: "Period 5", start: "2:10", end: "3:10")
+                    Period(classInfo: homeroom, order: .homeroom, start: "8:10", end: "8:20"),
+                    Period(classInfo: dataScience, order: .period1, start: "8:20", end: "9:35"),
+                    Period(classInfo: free, order: .morningAssembly, start: "9:35", end: "9:55"),
+                    Period(classInfo: free, order: .period2, start: "9:55", end: "10:55"),
+                    Period(classInfo: physics, order: .period3, start: "11:00", end: "12:00"),
+                    Period(classInfo: lunch, order: .lunch, start: "12:00", end: "1:00"),
+                    Period(classInfo: english, order: .period4, start: "1:05", end: "2:05"),
+                    Period(classInfo: free, order: .period5, start: "2:10", end: "3:10")
                 ])
         
         //Day 6
@@ -123,14 +123,14 @@ class UserRepository: ObservableObject {
                 description: "Day 2",
                 date: Date(),
                 periods: [
-                    Period(classInfo: homeroom, description: "Homeroom", start: "8:10", end: "8:20"),
-                    Period(classInfo: free, description: "Period 1", start: "8:20", end: "9:20"),
-                    Period(classInfo: advisory, description: "Morning Assembly", start: "9:20", end: "9:55"),
-                    Period(classInfo: stats, description: "Period 2", start: "9:55", end: "10:55"),
-                    Period(classInfo: free, description: "Period 3", start: "11:00", end: "12:15"),
-                    Period(classInfo: lunch, description: "Lunch and Collaborative Time", start: "12:15", end: "1:00"),
-                    Period(classInfo: calcBC, description: "Period 4", start: "1:05", end: "2:05"),
-                    Period(classInfo: free, description: "Period 5", start: "2:10", end: "3:10")
+                    Period(classInfo: homeroom, order: .homeroom, start: "8:10", end: "8:20"),
+                    Period(classInfo: free, order: .period1, start: "8:20", end: "9:20"),
+                    Period(classInfo: advisory, order: .morningAssembly, start: "9:20", end: "9:55"),
+                    Period(classInfo: stats, order: .period2, start: "9:55", end: "10:55"),
+                    Period(classInfo: free, order: .period3, start: "11:00", end: "12:15"),
+                    Period(classInfo: lunch, order: .lunch, start: "12:15", end: "1:00"),
+                    Period(classInfo: calcBC, order: .period4, start: "1:05", end: "2:05"),
+                    Period(classInfo: free, order: .period5, start: "2:10", end: "3:10")
                 ])
         
         //Day 7
@@ -139,14 +139,14 @@ class UserRepository: ObservableObject {
                 description: "Day 3",
                 date: Date(),
                 periods: [
-                    Period(classInfo: homeroom, description: "Homeroom", start: "8:10", end: "8:20"),
-                    Period(classInfo: english, description: "Period 1", start: "8:20", end: "9:35"),
-                    Period(classInfo: csClub, description: "Morning Assembly", start: "9:35", end: "9:55"),
-                    Period(classInfo: dataScience, description: "Period 2", start: "9:55", end: "10:55"),
-                    Period(classInfo: jazz, description: "Period 3", start: "11:00", end: "12:00"),
-                    Period(classInfo: lunch, description: "Lunch and Collaborative Time", start: "12:00", end: "1:00"),
-                    Period(classInfo: physics, description: "Period 4", start: "1:05", end: "2:05"),
-                    Period(classInfo: stats, description: "Period 5", start: "2:10", end: "3:10")
+                    Period(classInfo: homeroom, order: .homeroom, start: "8:10", end: "8:20"),
+                    Period(classInfo: english, order: .period1, start: "8:20", end: "9:35"),
+                    Period(classInfo: csClub, order: .morningAssembly, start: "9:35", end: "9:55"),
+                    Period(classInfo: dataScience, order: .period2, start: "9:55", end: "10:55"),
+                    Period(classInfo: jazz, order: .period3, start: "11:00", end: "12:00"),
+                    Period(classInfo: lunch, order: .lunch, start: "12:00", end: "1:00"),
+                    Period(classInfo: physics, order: .period4, start: "1:05", end: "2:05"),
+                    Period(classInfo: stats, order: .period5, start: "2:10", end: "3:10")
                 ])
         
         //Day 8
@@ -155,14 +155,14 @@ class UserRepository: ObservableObject {
                 description: "Day 2",
                 date: Date(),
                 periods: [
-                    Period(classInfo: homeroom, description: "Homeroom", start: "8:10", end: "8:20"),
-                    Period(classInfo: calcBC, description: "Period 1", start: "8:20", end: "9:20"),
-                    Period(classInfo: assembly, description: "Morning Assembly", start: "9:20", end: "9:55"),
-                    Period(classInfo: appDev, description: "Period 2", start: "9:55", end: "10:55"),
-                    Period(classInfo: stats, description: "Period 3", start: "11:00", end: "12:15"),
-                    Period(classInfo: lunch, description: "Lunch and Collaborative Time", start: "12:15", end: "1:00"),
-                    Period(classInfo: yearbook, description: "Period 4", start: "1:05", end: "2:05"),
-                    Period(classInfo: dataScience, description: "Period 5", start: "2:10", end: "3:10")
+                    Period(classInfo: homeroom, order: .homeroom, start: "8:10", end: "8:20"),
+                    Period(classInfo: calcBC, order: .period1, start: "8:20", end: "9:20"),
+                    Period(classInfo: assembly, order: .morningAssembly, start: "9:20", end: "9:55"),
+                    Period(classInfo: appDev, order: .period2, start: "9:55", end: "10:55"),
+                    Period(classInfo: stats, order: .period3, start: "11:00", end: "12:15"),
+                    Period(classInfo: lunch, order: .lunch, start: "12:15", end: "1:00"),
+                    Period(classInfo: yearbook, order: .period4, start: "1:05", end: "2:05"),
+                    Period(classInfo: dataScience, order: .period5, start: "2:10", end: "3:10")
                 ])
         
         let mySchedule: Schedule = Schedule(days: [day1, day2, day3, day4, day5, day6, day7, day8])
@@ -171,6 +171,7 @@ class UserRepository: ObservableObject {
         SVUser(
             name: "Daniel Shola-Philips",
             preferredFirst: "Daniel",
+            grade: 12,
             lightTheme: .systemMode,
             accentColor: .cyan,
             schedule: mySchedule,
