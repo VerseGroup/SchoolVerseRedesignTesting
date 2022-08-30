@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B442139E28BD7106004D3253 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442139D28BD7105004D3253 /* Food.swift */; };
 		B48EA6F828B7C8E200102E3B /* SchoolVerseRedesignTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */; };
 		B48EA6FC28B7C8E700102E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA6FB28B7C8E700102E3B /* Assets.xcassets */; };
 		B48EA6FF28B7C8E700102E3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA6FE28B7C8E700102E3B /* Preview Assets.xcassets */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B442139D28BD7105004D3253 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		B48EA6F428B7C8E100102E3B /* SchoolVerseRedesignTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolVerseRedesignTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolVerseRedesignTestingApp.swift; sourceTree = "<group>"; };
 		B48EA6FB28B7C8E700102E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				B4A45D2B28B9BF5C00074739 /* Class.swift */,
 				B4A45D2D28B9E7E100074739 /* SVUser.swift */,
 				B4A45D2F28BA525100074739 /* Event.swift */,
+				B442139D28BD7105004D3253 /* Food.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 				B4A45CEE28B83C3E00074739 /* MoreInfoCardView.swift in Sources */,
 				B4A45CE828B7E41100074739 /* MoreView.swift in Sources */,
 				B4A45D0F28B8742D00074739 /* TitleLabel.swift in Sources */,
+				B442139E28BD7106004D3253 /* Food.swift in Sources */,
 				B4A45CD428B7E17400074739 /* TabBarItemViewModifier.swift in Sources */,
 				B4A45D2228B936FB00074739 /* AccountsViewModel.swift in Sources */,
 				B4A45D0728B8452000074739 /* EventsView.swift in Sources */,

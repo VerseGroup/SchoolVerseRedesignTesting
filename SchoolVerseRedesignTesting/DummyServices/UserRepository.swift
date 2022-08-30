@@ -187,6 +187,9 @@ class UserRepository: ObservableObject {
                 mpClub,
                 yearbook,
             ],
-            sports: ["Boys' Varsity Basketball", "Boys' Varsity Baseball"])
+            sports: [
+                "Boys' Varsity Basketball",
+                "Boys' Varsity Baseball"
+            ])
     } //: init
 } //: User Repo
