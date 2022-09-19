@@ -9,26 +9,31 @@ import SwiftUI
 
 struct AppView: View {
     @State private var selection: TabBarItem = .home
-    let tabs: [TabBarItem] = [.home, .tasks, .schedule, .more]
+    let tabs: [TabBarItem] = [.home, .schedule, .tasks, .clubs, .more]
     
     var body: some View {
         TabBarViewBuilder {
-            NavigationView {
+            NavigationStack {
                 HomeView()
             }
             .tabBarItem(tab: TabBarItem.home, selection: selection)
             
-            NavigationView {
-                TasksView()
-            }
-            .tabBarItem(tab: TabBarItem.tasks, selection: selection)
-            
-            NavigationView {
+            NavigationStack {
                 ScheduleView()
             }
             .tabBarItem(tab: TabBarItem.schedule, selection: selection)
             
-            NavigationView {
+            NavigationStack {
+                TasksView()
+            }
+            .tabBarItem(tab: TabBarItem.tasks, selection: selection)
+            
+            NavigationStack {
+                ClubsView()
+            }
+            .tabBarItem(tab: TabBarItem.clubs, selection: selection)
+            
+            NavigationStack {
                 MoreView()
             }
             .tabBarItem(tab: TabBarItem.more, selection: selection)

@@ -9,10 +9,12 @@ import SwiftUI
 
 struct PeriodTileAndHeader: View {
     @State var periodInfo: Period
+    @State var dashBoardTitle: String?
     
     var body: some View {
         VStack {
-            HeaderLabel(name: periodInfo.description)
+            HeaderLabel(name: dashBoardTitle ?? periodInfo.order.description)
+                .padding(.top, 5)
             
             //Period Tile
             VStack (alignment: .leading) {
@@ -41,7 +43,7 @@ struct PeriodTileAndHeader: View {
             .background(
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.app.secondary)
-                    .shadow(color: Color.primary.opacity(0.2), radius: 5, x: 0, y: 2)
+                    .shadow(color: Color.primary.opacity(0.2), radius: 3, x: 0, y: 2)
                     .overlay{
                         RoundedRectangle(cornerRadius: 10)
                             .fill(periodInfo.classInfo.color.color)
@@ -69,9 +71,9 @@ struct PeriodTileAndHeader_Previews: PreviewProvider {
                     periodInfo: Period(
                         classInfo:
                             Class(title: "Lunch", color: .none),
-                        description: "Period 5",
-                        start: "2:10",
-                        end: "3:10")
+                        order: .lunchB,
+                        start: "12:30",
+                        end: "1:00")
                     
                 )
                 .padding()
@@ -86,7 +88,7 @@ struct PeriodTileAndHeader_Previews: PreviewProvider {
                     periodInfo: Period(
                         classInfo:
                             Class(title: "POST-AP DATA ANALYTICS & VISUALIZATION - MAJOR -1", teacher: "Mr. Shaw", room: "G207", color: .green),
-                        description: "Period 3",
+                        order: .period2,
                         start: "11:00",
                         end: "12:00")
                 )
@@ -97,3 +99,6 @@ struct PeriodTileAndHeader_Previews: PreviewProvider {
         }
     }
 }
+
+
+

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Menu: Identifiable {
+struct SVMenu: Identifiable {
     var id: UUID = UUID()
     var date: Date
     var breakfast: [Food]?

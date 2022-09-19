@@ -15,6 +15,8 @@ struct Class {
     var room: String?
     
     var color: ClassColor
+    
+    var tasks: [Task]?
 }
 
 enum ClassColor {

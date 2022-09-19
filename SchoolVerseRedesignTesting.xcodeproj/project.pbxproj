@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B407602A28D60FF3004ABCCD /* ClubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407602928D60FF3004ABCCD /* ClubsView.swift */; };
 		B442139E28BD7106004D3253 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442139D28BD7105004D3253 /* Food.swift */; };
 		B44213A028BE690A004D3253 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442139F28BE690A004D3253 /* Menu.swift */; };
+		B44213A228BE6D9B004D3253 /* MenuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44213A128BE6D9B004D3253 /* MenuRepository.swift */; };
+		B44213A428BFDA03004D3253 /* BreakfastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44213A328BFDA02004D3253 /* BreakfastData.swift */; };
+		B44213A628BFDA66004D3253 /* LunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44213A528BFDA66004D3253 /* LunchData.swift */; };
+		B44213A828BFDA81004D3253 /* DinnerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44213A728BFDA81004D3253 /* DinnerData.swift */; };
 		B48EA6F828B7C8E200102E3B /* SchoolVerseRedesignTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */; };
 		B48EA6FC28B7C8E700102E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA6FB28B7C8E700102E3B /* Assets.xcassets */; };
 		B48EA6FF28B7C8E700102E3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA6FE28B7C8E700102E3B /* Preview Assets.xcassets */; };
@@ -49,11 +54,21 @@
 		B4A45D3228BA55CB00074739 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3128BA55CB00074739 /* UserRepository.swift */; };
 		B4A45D3428BA761100074739 /* DayScheduleTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3328BA761000074739 /* DayScheduleTile.swift */; };
 		B4A45D3628BABA7500074739 /* PeriodTileAndHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */; };
+		B4EC6D8928D6AB6600DF4A0D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC6D8828D6AB6600DF4A0D /* Task.swift */; };
+		B4EC6D8B28D6B56900DF4A0D /* NavMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC6D8A28D6B56900DF4A0D /* NavMenuButtonView.swift */; };
+		B4EC6D8D28D6D13500DF4A0D /* TasksByClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC6D8C28D6D13500DF4A0D /* TasksByClassView.swift */; };
+		B4EC6D8F28D6D14B00DF4A0D /* TasksByDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC6D8E28D6D14B00DF4A0D /* TasksByDateView.swift */; };
+		B4EC6D9128D7866200DF4A0D /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC6D9028D7866200DF4A0D /* TasksViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B407602928D60FF3004ABCCD /* ClubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsView.swift; sourceTree = "<group>"; };
 		B442139D28BD7105004D3253 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		B442139F28BE690A004D3253 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		B44213A128BE6D9B004D3253 /* MenuRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRepository.swift; sourceTree = "<group>"; };
+		B44213A328BFDA02004D3253 /* BreakfastData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastData.swift; sourceTree = "<group>"; };
+		B44213A528BFDA66004D3253 /* LunchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchData.swift; sourceTree = "<group>"; };
+		B44213A728BFDA81004D3253 /* DinnerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerData.swift; sourceTree = "<group>"; };
 		B48EA6F428B7C8E100102E3B /* SchoolVerseRedesignTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolVerseRedesignTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolVerseRedesignTestingApp.swift; sourceTree = "<group>"; };
 		B48EA6FB28B7C8E700102E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +110,11 @@
 		B4A45D3128BA55CB00074739 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		B4A45D3328BA761000074739 /* DayScheduleTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayScheduleTile.swift; sourceTree = "<group>"; };
 		B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodTileAndHeader.swift; sourceTree = "<group>"; };
+		B4EC6D8828D6AB6600DF4A0D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		B4EC6D8A28D6B56900DF4A0D /* NavMenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavMenuButtonView.swift; sourceTree = "<group>"; };
+		B4EC6D8C28D6D13500DF4A0D /* TasksByClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksByClassView.swift; sourceTree = "<group>"; };
+		B4EC6D8E28D6D14B00DF4A0D /* TasksByDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksByDateView.swift; sourceTree = "<group>"; };
+		B4EC6D9028D7866200DF4A0D /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +128,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B407602628D60FB9004ABCCD /* Clubs */ = {
+			isa = PBXGroup;
+			children = (
+				B407602828D60FC7004ABCCD /* Views */,
+				B407602728D60FC0004ABCCD /* ViewModels */,
+			);
+			path = Clubs;
+			sourceTree = "<group>";
+		};
+		B407602728D60FC0004ABCCD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B407602828D60FC7004ABCCD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B407602928D60FF3004ABCCD /* ClubsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B48EA6EB28B7C8E100102E3B = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +205,10 @@
 			isa = PBXGroup;
 			children = (
 				B4A45D3128BA55CB00074739 /* UserRepository.swift */,
+				B44213A128BE6D9B004D3253 /* MenuRepository.swift */,
+				B44213A328BFDA02004D3253 /* BreakfastData.swift */,
+				B44213A528BFDA66004D3253 /* LunchData.swift */,
+				B44213A728BFDA81004D3253 /* DinnerData.swift */,
 			);
 			path = DummyServices;
 			sourceTree = "<group>";
@@ -177,6 +225,7 @@
 				B4A45D2F28BA525100074739 /* Event.swift */,
 				B442139D28BD7105004D3253 /* Food.swift */,
 				B442139F28BE690A004D3253 /* Menu.swift */,
+				B4EC6D8828D6AB6600DF4A0D /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +240,7 @@
 				B4A45D1928B88FB300074739 /* TextFieldWithTitle.swift */,
 				B4A45D3328BA761000074739 /* DayScheduleTile.swift */,
 				B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */,
+				B4EC6D8A28D6B56900DF4A0D /* NavMenuButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -199,8 +249,9 @@
 			isa = PBXGroup;
 			children = (
 				B48EA70E28B7CA7000102E3B /* Home */,
-				B48EA71028B7CA8600102E3B /* Tasks */,
 				B48EA70F28B7CA7900102E3B /* Schedule */,
+				B48EA71028B7CA8600102E3B /* Tasks */,
+				B407602628D60FB9004ABCCD /* Clubs */,
 				B48EA71128B7CA8F00102E3B /* More */,
 			);
 			path = Pages;
@@ -311,6 +362,8 @@
 			isa = PBXGroup;
 			children = (
 				B4A45CE328B7E3EA00074739 /* TasksView.swift */,
+				B4EC6D8C28D6D13500DF4A0D /* TasksByClassView.swift */,
+				B4EC6D8E28D6D14B00DF4A0D /* TasksByDateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,6 +371,7 @@
 		B4A45CDC28B7E37700074739 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B4EC6D9028D7866200DF4A0D /* TasksViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -532,8 +586,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4A45D1528B8838000074739 /* LinkLabel.swift in Sources */,
+				B407602A28D60FF3004ABCCD /* ClubsView.swift in Sources */,
 				B48EA71728B7CB1000102E3B /* RouterView.swift in Sources */,
+				B4EC6D8D28D6D13500DF4A0D /* TasksByClassView.swift in Sources */,
 				B4A45D3228BA55CB00074739 /* UserRepository.swift in Sources */,
+				B4EC6D8928D6AB6600DF4A0D /* Task.swift in Sources */,
 				B4A45CE428B7E3EA00074739 /* TasksView.swift in Sources */,
 				B48EA6F828B7C8E200102E3B /* SchoolVerseRedesignTestingApp.swift in Sources */,
 				B4A45D1C28B893CD00074739 /* DestructiveButtonLabel.swift in Sources */,
@@ -544,11 +601,15 @@
 				B4A45CD628B7E23300074739 /* TabBarViewBuilder.swift in Sources */,
 				B4A45D2A28B9BF1600074739 /* Period.swift in Sources */,
 				B4A45D1128B8816800074739 /* HeaderLabel.swift in Sources */,
+				B44213A828BFDA81004D3253 /* DinnerData.swift in Sources */,
 				B4A45D2C28B9BF5C00074739 /* Class.swift in Sources */,
+				B44213A628BFDA66004D3253 /* LunchData.swift in Sources */,
+				B4EC6D9128D7866200DF4A0D /* TasksViewModel.swift in Sources */,
 				B4A45D1728B887D100074739 /* ParagraphLabel.swift in Sources */,
 				B4A45CEA28B7FA2800074739 /* Color.swift in Sources */,
 				B4A45D2828B9BEF800074739 /* DaySchedule.swift in Sources */,
 				B4A45D3628BABA7500074739 /* PeriodTileAndHeader.swift in Sources */,
+				B4EC6D8B28D6B56900DF4A0D /* NavMenuButtonView.swift in Sources */,
 				B4A45D2028B8964900074739 /* NavigationLinkLabel.swift in Sources */,
 				B4A45CE628B7E40500074739 /* ScheduleView.swift in Sources */,
 				B4A45D3428BA761100074739 /* DayScheduleTile.swift in Sources */,
@@ -556,8 +617,10 @@
 				B4A45D3028BA525100074739 /* Event.swift in Sources */,
 				B4A45CE228B7E3D200074739 /* HomeView.swift in Sources */,
 				B4A45D0328B8450200074739 /* MenuView.swift in Sources */,
+				B4EC6D8F28D6D14B00DF4A0D /* TasksByDateView.swift in Sources */,
 				B4A45D2628B9B89B00074739 /* Schedule.swift in Sources */,
 				B4A45D0128B844F000074739 /* AccountView.swift in Sources */,
+				B44213A428BFDA03004D3253 /* BreakfastData.swift in Sources */,
 				B4A45D2E28B9E7E100074739 /* SVUser.swift in Sources */,
 				B48EA70B28B7CA0E00102E3B /* AppView.swift in Sources */,
 				B4A45D2428B93DBB00074739 /* UserColor.swift in Sources */,
@@ -571,6 +634,7 @@
 				B4A45CD428B7E17400074739 /* TabBarItemViewModifier.swift in Sources */,
 				B4A45D2228B936FB00074739 /* AccountsViewModel.swift in Sources */,
 				B4A45D0728B8452000074739 /* EventsView.swift in Sources */,
+				B44213A228BE6D9B004D3253 /* MenuRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,12 +766,15 @@
 				DEVELOPMENT_TEAM = F9RDZ5259N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SchoolVerse Redesign";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -732,12 +799,15 @@
 				DEVELOPMENT_TEAM = F9RDZ5259N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SchoolVerse Redesign";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

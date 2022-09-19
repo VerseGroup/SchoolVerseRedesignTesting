@@ -30,7 +30,7 @@ struct TabBarView: View {
 struct TabBarView_Previews: PreviewProvider {
     
     static let tabs: [TabBarItem] = [
-        .home, .tasks, .schedule, .more
+        .home, .schedule, .tasks, .clubs, .more
     ]
     
     static var previews: some View {
@@ -54,7 +54,7 @@ extension TabBarView {
 
         Image(systemName: tab.iconName)
             .font(.title)
-            .foregroundColor(localSelection == tab ? Color.app.secondary : Color.app.text)
+            .foregroundStyle(localSelection == tab ? Color.app.secondary.shadow(.drop(radius: 0, y: 0)) : Color.app.text.shadow(.drop(radius: 0, y: 0)))
             .padding(.vertical, 7.0)
             .frame(maxWidth: .infinity)
             .frame(height: 50)
@@ -62,7 +62,7 @@ extension TabBarView {
                 ZStack {
                     if localSelection == tab {
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.accent.cyan)
+                            .fill(Color.accent.cyan.gradient)
                             .matchedGeometryEffect(id: "background_rectangle", in: namespace)
                             .frame(width: 60, height: 60)
                     }

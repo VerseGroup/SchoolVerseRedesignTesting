@@ -21,10 +21,10 @@ struct MoreInfoCardView: View, Identifiable {
             Text(name)
                 .font(.title2)
         }
-        .foregroundColor(Color.app.secondary)
+        .foregroundStyle(Color.white.shadow(.drop(radius: 1, y: 2)))
         .padding()
         .frame(width: 175, height: 200)
-        .background(Color.accent.cyan)
+        .background(Color.accent.cyan.gradient)
         .cornerRadius(10)
         .shadow(color: Color.accent.cyan.opacity(0.3), radius: 5, x: 0, y: 5)
     }

@@ -18,7 +18,7 @@ struct HeaderLabel: View {
             
             Spacer()
         }
-        .padding(10)
+        .padding(7)
     }
 }
 

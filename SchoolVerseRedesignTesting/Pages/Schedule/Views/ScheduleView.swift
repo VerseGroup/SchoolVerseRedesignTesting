@@ -8,45 +8,138 @@
 import SwiftUI
 
 struct ScheduleView: View {
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     var body: some View {
         ZStack {
             Color.app.screen
                 .ignoresSafeArea()
             
             ScrollView(showsIndicators: false) {
-                VStack(alignment: .leading, spacing: 30) {
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                VStack(alignment: .leading, spacing: 0) {
+                    today
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    period1
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    morningBreak
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    period2
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    period3
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    lunchA
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    lunchB
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    period4
                     
-                    Text("Welcome to SchoolVerse")
-                        .font(.largeTitle)
+                    period5
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 75)
                 }
             }
             .navigationTitle("Schedule")
+        }
+    }
+}
+
+extension ScheduleView {
+    private var today: some View {
+        Group {
+            HeaderLabel(name: "Today")
+                .padding(.horizontal, 8)
+            
+            DayScheduleTile(day: DaySchedule(description: "Day 1", date: Date.now))
+                .padding(.horizontal)
+        }
+    }
+}
+
+extension ScheduleView {
+    private var period1: some View {
+        Group {
+            PeriodTileAndHeader(periodInfo:
+                Period(classInfo: userRepo.appDev, order: .period1,
+                       start: "8:20", end: "9:35"))
+            .padding(.horizontal)
+        }
+    }
+}
+
+extension ScheduleView {
+    private var morningBreak: some View {
+        Group {
+            PeriodTileAndHeader(periodInfo:
+                Period(classInfo: userRepo.advisory, order: .morningAssembly,
+                       start: "9:35", end: "9:50"))
+            .padding(.horizontal)
+        }
+    }
+}
+
+extension ScheduleView {
+    private var period2: some View {
+        Group {
+            PeriodTileAndHeader(periodInfo:
+                Period(classInfo: userRepo.free, order: .period2,
+                       start: "9:55", end: "10:55"))
+            .padding(.horizontal)
+        }
+    }
+}
+
+extension ScheduleView {
+    private var period3: some View {
+        Group {
+            PeriodTileAndHeader(periodInfo:
+                Period(classInfo: userRepo.stats, order: .period3,
+                       start: "11:00", end: "12:00"))
+            .padding(.horizontal)
+        }
+    }
+}
+
+extension ScheduleView {
+    private var lunchA: some View {
+        Group {
+            PeriodTileAndHeader(periodInfo:
+                Period(classInfo: userRepo.csClub, order: .lunchA,
+                       start: "12:00", end: "12:30"))
+            .padding(.horizontal)
+        }
+    }
+}
+
+extension ScheduleView {
+    private var lunchB: some View {
+        Group {
+            PeriodTileAndHeader(periodInfo:
+                Period(classInfo: userRepo.lunch, order: .lunchB,
+                       start: "12:30", end: "1:00"))
+            .padding(.horizontal)
+        }
+    }
+}
+
+extension ScheduleView {
+    private var period4: some View {
+        Group {
+            PeriodTileAndHeader(periodInfo:
+                Period(classInfo: userRepo.dataScience, order: .period4,
+                       start: "1:05", end: "2:05"))
+            .padding(.horizontal)
+        }
+    }
+}
+
+extension ScheduleView {
+    private var period5: some View {
+        Group {
+            PeriodTileAndHeader(periodInfo:
+                Period(classInfo: userRepo.free, order: .period5,
+                       start: "2:10", end: "3:10"))
+            .padding(.horizontal)
         }
     }
 }

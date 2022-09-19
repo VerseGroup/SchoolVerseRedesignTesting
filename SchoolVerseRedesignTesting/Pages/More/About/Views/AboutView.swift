@@ -16,9 +16,11 @@ struct AboutView: View {
             
             ScrollView(showsIndicators: false) {
                 VStack {
-                    aboutView()
+                    aboutView
                     
-                    sourceCodeView()
+                    sourceCodeView
+                    
+                    recognition
                     
                     Spacer()
                         .frame(height: 75)
@@ -30,22 +32,24 @@ struct AboutView: View {
 }
 
 extension AboutView {
-    private func aboutView() -> some View {
+    private var aboutView: some View {
         Group {
             TitleLabel(name: "SchoolVerse by VerseGroup, LLC")
-                .padding(10)
+                .padding(.horizontal, 10)
             
             HeaderLabel(name: "Founders")
+                .padding(.horizontal, 8)
             
             SubtitleLabel(name: "By Paul Evans, Malcolm Krolick, \n Daniel Shola-Philips, and Steven Yu")
-                .padding(10)
+                .padding(.horizontal, 10)
             
             HeaderLabel(name: "Purpose Statement")
+                .padding(.horizontal, 8)
             
             ParagraphLabel(name:
                 "\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu luctus tortor. Ut neque metus, iaculis a blandit ac, mollis et magna. In hac habitasse platea dictumst. Nullam sodales enim orci, ut posuere tellus commodo sit amet. Fusce ultricies mattis ante, id consequat lacus. Praesent facilisis commodo tortor."
             )
-            .padding(10)
+            .padding(.horizontal, 10)
             
             LinkLabel(name: "Click to visit our website", link: "https://www.versegroup.tech")
                 .padding(10)
@@ -54,22 +58,37 @@ extension AboutView {
 }
 
 extension AboutView {
-    private func sourceCodeView() -> some View {
+    private var sourceCodeView: some View {
         Group {
-            HeaderLabel(name: "SchoolVerse Description")
+            HeaderLabel(name: "SchoolVerse Description") .padding(.horizontal, 8)
             
             ParagraphLabel(name:
                 "\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu luctus tortor. Ut neque metus, iaculis a blandit ac, mollis et magna. In hac habitasse platea dictumst. Nullam sodales enim orci, ut posuere tellus commodo sit amet. Fusce ultricies mattis ante, id consequat lacus. Praesent facilisis commodo tortor."
             )
-            .padding(10)
+            .padding(.horizontal, 10)
             
-            HeaderLabel(name: "Our Repositories")
+            HeaderLabel(name: "Our Repositories") .padding(.horizontal, 8)
             
-            LinkLabel(name: "Frontend Repository", link: "https://github.com/VerseGroup/SchoolVerseTesting")
+            LinkLabel(name: "Frontend Repository", link: "https://github.com/VerseGroup/SchoolVerse-iOS")
                 .padding(10)
             
             LinkLabel(name: "Backend Repository", link: "https://github.com/VerseGroup/SchoolVerse-webscraper")
                 .padding(10)
+        }
+    }
+}
+
+
+extension AboutView {
+    private var recognition: some View {
+        Group {
+            HeaderLabel(name: "Special Thanks")
+                .padding(.horizontal, 8)
+            
+            ParagraphLabel(name:
+                "\tWe would like to give a shout-out to Mrs. Tranchida, Mr. Dioguardi, Mrs. Maguire, Mr. King, Dr. Ying and so many other faculty and students for giving us significant help, support, and feedback vital to the creation of this app for Hackley School."
+            )
+            .padding(.horizontal, 10)
         }
     }
 }

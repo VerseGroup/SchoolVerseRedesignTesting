@@ -21,7 +21,8 @@ enum PeriodOrder {
     case morningAssembly
     case period2
     case period3
-    case lunch
+    case lunchA
+    case lunchB
     case period4
     case period5
     
@@ -32,13 +33,15 @@ enum PeriodOrder {
         case .period1:
             return "Period 1"
         case .morningAssembly:
-            return "Morning Assembly"
+            return "Morning Break Period"
         case .period2:
             return "Period 2"
         case .period3:
             return "Period 3"
-        case .lunch:
-            return "Lunch and Collaborative Time"
+        case .lunchA:
+            return "1st Lunch"
+        case .lunchB:
+            return "2nd Lunch"
         case .period4:
             return "Period 4"
         case .period5:
@@ -58,12 +61,14 @@ enum PeriodOrder {
             return 3
         case .period3:
             return 4
-        case .lunch:
+        case .lunchA:
             return 5
-        case .period4:
+        case .lunchB:
             return 6
-        case .period5:
+        case .period4:
             return 7
+        case .period5:
+            return 8
         }
     }
 }
