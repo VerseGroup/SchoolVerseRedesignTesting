@@ -12,7 +12,7 @@ struct NavMenuButtonView: View {
     
     var body: some View {
         Image(systemName: "line.horizontal.3.decrease")
-            .foregroundColor(Color.accent.cyan)
+            .foregroundColor(userRepo.accent.color)
             .font(.system(size:25))
             .padding()
             .padding(.leading)

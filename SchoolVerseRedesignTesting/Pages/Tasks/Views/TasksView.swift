@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TasksView: View {
-    @State var sort: Int = 0
+    @State var sort: Int = 1
     
     var body: some View {
         ZStack {
@@ -24,7 +24,7 @@ struct TasksView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 75)
                 }
             }
             .navigationTitle("Tasks")

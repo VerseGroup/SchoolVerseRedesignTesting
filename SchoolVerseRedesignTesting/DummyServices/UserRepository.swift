@@ -36,6 +36,8 @@ class UserRepository: ObservableObject {
     @Published var assembly: Class = Class(title: "ASSEMBLY", color: .none)
     @Published var lunch: Class = Class(title: "Lunch", color: .none)
     
+    @Published var accent: AccentColor = .blue
+    
     init() {
         //Day 1
         let day1: DaySchedule =
@@ -173,7 +175,7 @@ class UserRepository: ObservableObject {
             preferredFirst: "DSP",
             grade: 12,
             lightTheme: .systemMode,
-            accentColor: .cyan,
+            accentColor: accent,
             schedule: mySchedule,
             classes: [
                 english,

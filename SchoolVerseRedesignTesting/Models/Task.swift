@@ -15,5 +15,5 @@ struct Task: Identifiable {
     var description: String
     var completed: Bool
     var dueDate: Date
-    var color: Color 
+    var color: Color?
 }

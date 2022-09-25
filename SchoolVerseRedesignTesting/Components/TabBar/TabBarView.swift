@@ -12,6 +12,7 @@ import SwiftUI
 
 struct TabBarView: View {
     
+    @ObservedObject var userRepo: UserRepository = UserRepository()
     let tabs: [TabBarItem]
     @Binding var selection: TabBarItem
     @Namespace private var namespace
@@ -62,7 +63,7 @@ extension TabBarView {
                 ZStack {
                     if localSelection == tab {
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.accent.cyan.gradient)
+                            .fill(userRepo.accent.color.gradient)
                             .matchedGeometryEffect(id: "background_rectangle", in: namespace)
                             .frame(width: 60, height: 60)
                     }
@@ -85,7 +86,7 @@ extension TabBarView {
             }
         }
         .padding(.top, 15.0)
-        .shadow(color: Color.accent.cyan.opacity(0.3), radius: 10, x: 0, y: 5)
+        .shadow(color: userRepo.accent.color.opacity(0.3), radius: 10, x: 0, y: 5)
         .padding(.horizontal)
         .background(
             RoundedRectangle(cornerRadius: 20)

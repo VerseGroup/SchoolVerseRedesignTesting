@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MoreInfoCardView: View, Identifiable {
     
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     @State var imageName: String
     @State var name: String
     @State var id: UUID = UUID()
@@ -24,9 +26,9 @@ struct MoreInfoCardView: View, Identifiable {
         .foregroundStyle(Color.white.shadow(.drop(radius: 1, y: 2)))
         .padding()
         .frame(width: 175, height: 200)
-        .background(Color.accent.cyan.gradient)
+        .background(userRepo.accent.color.gradient)
         .cornerRadius(10)
-        .shadow(color: Color.accent.cyan.opacity(0.3), radius: 5, x: 0, y: 5)
+        .shadow(color: userRepo.accent.color.opacity(0.3), radius: 5, x: 0, y: 5)
     }
 }
 

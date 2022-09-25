@@ -8,8 +8,110 @@
 import SwiftUI
 
 struct TasksByDateView: View {
+    @ObservedObject var vm: TasksViewModel = TasksViewModel()
+
     var body: some View {
-        Text("List of tasks organized by date")
+        VStack {
+            past
+            
+            todayTomorrow
+            
+            upcoming
+        }
+    }
+}
+
+extension TasksByDateView {
+    var past: some View {
+        VStack {
+            HeaderLabel(name: "Past")
+                .padding(.horizontal, 5)
+            
+            DisclosureGroup {
+                TasksTile(task: Task(classInfo: vm.userRepo.physics, name: "2. MacGyver challenge 2", description: "", completed: false, dueDate: Date.now), completed: false, classInfo: vm.userRepo.physics)
+                    .padding(.horizontal, 5)
+                    .padding(.top, 2)
+                    .padding(.bottom, 7)
+                
+                TasksTile(task: Task(classInfo: vm.userRepo.english, name: "R&A Circle to 109", description: "", completed: false, dueDate: Date.now), completed: false, classInfo: vm.userRepo.english)
+                    .padding(.horizontal, 5)
+                    .padding(.top, 2)
+                    .padding(.bottom, 7)
+            } label: {
+                HeaderLabel(name: "Pending")
+            }
+            .padding(.horizontal)
+            .padding(5)
+            .tint(Color.app.text)
+        }
+    }
+    
+    var todayTomorrow: some View {
+        VStack {
+            HeaderLabel(name: "Today / Tomorrow")
+                .padding(.horizontal, 5)
+            
+            DisclosureGroup {
+                TasksTile(task: Task(classInfo: vm.userRepo.calcBC, name: "p.394 # 22, 31 and p.A50 #6, 15, 26 and watch Int. by Parts video up to 14:30 by Hackley alum George Wangensteen", description: "", completed: false, dueDate: Date.now), completed: false, classInfo: vm.userRepo.calcBC)
+                    .padding(.horizontal, 5)
+                    .padding(.top, 2)
+                    .padding(.bottom, 7)
+                
+                TasksTile(task: Task(classInfo: vm.userRepo.english, name: "1) R&A Circle to 137 // 2) GC Post - Circle to 137 // 3) CLASS TEAM NAME!!", description: "", completed: false, dueDate: Date.now), completed: false, classInfo: vm.userRepo.english)
+                    .padding(.horizontal, 5)
+                    .padding(.top, 2)
+                    .padding(.bottom, 7)
+            } label: {
+                HeaderLabel(name: "Pending")
+                
+            }
+            .padding(.horizontal)
+            .padding(5)
+            .tint(Color.app.text)
+            
+            DisclosureGroup {
+                
+            } label: {
+                HeaderLabel(name: "Completed")
+                
+            }
+            .padding(.horizontal)
+            .padding(5)
+            .tint(Color.app.text)
+        }
+    }
+    
+    var upcoming: some View {
+        VStack {
+            HeaderLabel(name: "Upcoming")
+                .padding(.horizontal, 5)
+            
+            DisclosureGroup {
+                TasksTile(task: Task(classInfo: vm.userRepo.stats, name: "Chapter 1 Test", description: "Chapter 1 Test", completed: false, dueDate: Date.now), completed: false, classInfo: vm.userRepo.stats)
+                    .padding(.horizontal, 5)
+                    .padding(.top, 2)
+                    .padding(.bottom, 7)
+                
+                
+            } label: {
+                HeaderLabel(name: "Pending")
+            }
+            .padding(.horizontal)
+            .padding(5)
+            .tint(Color.app.text)
+            
+            DisclosureGroup {
+                TasksTile(task: Task(classInfo: vm.userRepo.stats, name: "Homework #7 - Optional Practice Chapter 1 Practice Test", description: "Homework #7 - Optional Practice Chapter 1 Practice Test", completed: true, dueDate: Date.now), completed: true, classInfo: vm.userRepo.stats)
+                    .padding(.horizontal, 5)
+                    .padding(.top, 2)
+                    .padding(.bottom, 7)
+            } label: {
+                HeaderLabel(name: "Completed")
+            }
+            .padding(.horizontal)
+            .padding(5)
+            .tint(Color.app.text)
+        }
     }
 }
 
