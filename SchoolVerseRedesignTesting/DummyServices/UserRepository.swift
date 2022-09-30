@@ -13,20 +13,20 @@ class UserRepository: ObservableObject {
     //Classes and Activies
     
     //Majors
-    @Published var english: Class = Class(title: "ENGLISH 12 - PANOPTICON PRIME -3", teacher: "Mr. Lobko", room: "R124", color: .yellow)
+    @Published var english: Class = Class(title: "ENGLISH 12 - PANOPTICON PRIME -3", teacher: "Mr. Lobko", room: "R122", color: .yellow)
     @Published var dataScience: Class = Class(title: "POST-AP DATA ANALYTICS & VISUALIZATION - MAJOR -1", teacher: "Mr. Shaw", room: "G207", color: .green)
     @Published var physics: Class = Class(title: "ADVANCED PHYSICS -2", teacher: "Mr. Karpinski", room: "S018", color: .blue)
-    @Published var calcBC: Class = Class(title: "AP CALCULUS (BC) -1", teacher: "Ms. Kaplan", room: "R214", color: .lightBlue)
-    @Published var stats: Class = Class(title: "AP STATISTICS -3", teacher: "Ms. Richardson", room: "R215", color: .red)
+    @Published var calcBC: Class = Class(title: "AP CALCULUS (BC) -1", teacher: "Ms. Wright", room: "R221", color: .lightBlue)
+    @Published var stats: Class = Class(title: "AP STATISTICS -3", teacher: "Ms. Gruenberg", room: "R222", color: .red)
     
     //Minors
-    @Published var jazz: Class =  Class(title: "JAZZ COMBOS", teacher: "Dr. Malkiel", room: "Band Room 1", color: .orange)
+    @Published var jazz: Class =  Class(title: "JAZZ COMBOS", teacher: "Dr. Malkiel", room: "Band Room 2", color: .orange)
     @Published var appDev: Class = Class(title: "POST-AP MOBILE APP DEVELOPMENT - MINOR -1", teacher: "Mrs. Tranchida", room: "G201", color: .purple)
     
     //Clubs
     @Published var csClub: Class = Class(title: "HACKLEY CS CLUB", room: "G201", color: .lime)
     @Published var mpClub: Class = Class(title: "MUSIC PRODUCTION CLUB", room: "G201", color: .lime)
-    @Published var yearbook: Class = Class(title: "YEARBOOK COMMITTEE", teacher: "Ms. Bottalico", room: "Photo Room", color: .lime)
+    @Published var yearbook: Class = Class(title: "YEARBOOK COMMITTEE", teacher: "Ms. Bottalico", room: "Photo Lab", color: .lime)
     
     //Other Periods
     @Published var free: Class = Class(title: "Free Period!", color: .none)
@@ -36,7 +36,8 @@ class UserRepository: ObservableObject {
     @Published var assembly: Class = Class(title: "ASSEMBLY", color: .none)
     @Published var lunch: Class = Class(title: "Lunch", color: .none)
     
-    @Published var accent: AccentColor = .blue
+    @Published var accent: AccentColor = .cyan
+    @Published var first: String = "Daniel"
     
     init() {
         //Day 1
@@ -172,9 +173,8 @@ class UserRepository: ObservableObject {
         var svUser: SVUser =
         SVUser(
             name: "Daniel Shola-Philips",
-            preferredFirst: "DSP",
+            preferredFirst: first,
             grade: 12,
-            lightTheme: .systemMode,
             accentColor: accent,
             schedule: mySchedule,
             classes: [
@@ -194,4 +194,8 @@ class UserRepository: ObservableObject {
                 "Boys' Varsity Baseball"
             ])
     } //: init
+    
+    func changeAccent(color: AccentColor) {
+        accent = color
+    }
 } //: User Repo

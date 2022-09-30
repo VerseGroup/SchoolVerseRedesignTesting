@@ -42,7 +42,7 @@ extension TasksByDateView {
             }
             .padding(.horizontal)
             .padding(5)
-            .tint(Color.app.text)
+            .tint(Color.white)
         }
     }
     
@@ -67,7 +67,7 @@ extension TasksByDateView {
             }
             .padding(.horizontal)
             .padding(5)
-            .tint(Color.app.text)
+            .tint(Color.white)
             
             DisclosureGroup {
                 
@@ -77,7 +77,7 @@ extension TasksByDateView {
             }
             .padding(.horizontal)
             .padding(5)
-            .tint(Color.app.text)
+            .tint(Color.white)
         }
     }
     
@@ -98,7 +98,7 @@ extension TasksByDateView {
             }
             .padding(.horizontal)
             .padding(5)
-            .tint(Color.app.text)
+            .tint(Color.white)
             
             DisclosureGroup {
                 TasksTile(task: Task(classInfo: vm.userRepo.stats, name: "Homework #7 - Optional Practice Chapter 1 Practice Test", description: "Homework #7 - Optional Practice Chapter 1 Practice Test", completed: true, dueDate: Date.now), completed: true, classInfo: vm.userRepo.stats)
@@ -110,7 +110,7 @@ extension TasksByDateView {
             }
             .padding(.horizontal)
             .padding(5)
-            .tint(Color.app.text)
+            .tint(Color.white)
         }
     }
 }

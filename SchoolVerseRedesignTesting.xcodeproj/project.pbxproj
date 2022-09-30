@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B407602A28D60FF3004ABCCD /* ClubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407602928D60FF3004ABCCD /* ClubsView.swift */; };
+		B42B810F28E4B9E1009EE2E0 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B810E28E4B9E1009EE2E0 /* OnBoardingView.swift */; };
 		B442139E28BD7106004D3253 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442139D28BD7105004D3253 /* Food.swift */; };
 		B44213A028BE690A004D3253 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442139F28BE690A004D3253 /* Menu.swift */; };
 		B44213A228BE6D9B004D3253 /* MenuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44213A128BE6D9B004D3253 /* MenuRepository.swift */; };
@@ -54,6 +55,9 @@
 		B4A45D3228BA55CB00074739 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3128BA55CB00074739 /* UserRepository.swift */; };
 		B4A45D3428BA761100074739 /* DayScheduleTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3328BA761000074739 /* DayScheduleTile.swift */; };
 		B4A45D3628BABA7500074739 /* PeriodTileAndHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */; };
+		B4BBDD0028E71856001B0282 /* Glass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDCFF28E71855001B0282 /* Glass.swift */; };
+		B4C1810428E66C70007FB059 /* ColorfulBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1810328E66C70007FB059 /* ColorfulBackgroundView.swift */; };
+		B4C1810628E698D4007FB059 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1810528E698D4007FB059 /* GlassCard.swift */; };
 		B4E386A728DCD2D700E1E4A5 /* TasksTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E386A628DCD2D700E1E4A5 /* TasksTile.swift */; };
 		B4E386A928DCE0B600E1E4A5 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E386A828DCE0B600E1E4A5 /* CheckBoxView.swift */; };
 		B4E386AB28DFAA6A00E1E4A5 /* MySportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E386AA28DFAA6A00E1E4A5 /* MySportsView.swift */; };
@@ -61,6 +65,7 @@
 		B4E386AF28DFB41700E1E4A5 /* BreakfastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E386AE28DFB41700E1E4A5 /* BreakfastView.swift */; };
 		B4E386B128DFB42C00E1E4A5 /* LunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E386B028DFB42C00E1E4A5 /* LunchView.swift */; };
 		B4E386B328DFB44100E1E4A5 /* DinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E386B228DFB44100E1E4A5 /* DinnerView.swift */; };
+		B4E386B728E0C1D600E1E4A5 /* ColorThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E386B628E0C1D600E1E4A5 /* ColorThemePicker.swift */; };
 		B4EC6D8928D6AB6600DF4A0D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC6D8828D6AB6600DF4A0D /* Task.swift */; };
 		B4EC6D8B28D6B56900DF4A0D /* NavMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC6D8A28D6B56900DF4A0D /* NavMenuButtonView.swift */; };
 		B4EC6D8D28D6D13500DF4A0D /* TasksByClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC6D8C28D6D13500DF4A0D /* TasksByClassView.swift */; };
@@ -70,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		B407602928D60FF3004ABCCD /* ClubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsView.swift; sourceTree = "<group>"; };
+		B42B810E28E4B9E1009EE2E0 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		B442139D28BD7105004D3253 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		B442139F28BE690A004D3253 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		B44213A128BE6D9B004D3253 /* MenuRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRepository.swift; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 		B4A45D3128BA55CB00074739 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		B4A45D3328BA761000074739 /* DayScheduleTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayScheduleTile.swift; sourceTree = "<group>"; };
 		B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodTileAndHeader.swift; sourceTree = "<group>"; };
+		B4BBDCFF28E71855001B0282 /* Glass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glass.swift; sourceTree = "<group>"; };
+		B4C1810328E66C70007FB059 /* ColorfulBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulBackgroundView.swift; sourceTree = "<group>"; };
+		B4C1810528E698D4007FB059 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
 		B4E386A628DCD2D700E1E4A5 /* TasksTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTile.swift; sourceTree = "<group>"; };
 		B4E386A828DCE0B600E1E4A5 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		B4E386AA28DFAA6A00E1E4A5 /* MySportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySportsView.swift; sourceTree = "<group>"; };
@@ -124,6 +133,7 @@
 		B4E386AE28DFB41700E1E4A5 /* BreakfastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastView.swift; sourceTree = "<group>"; };
 		B4E386B028DFB42C00E1E4A5 /* LunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchView.swift; sourceTree = "<group>"; };
 		B4E386B228DFB44100E1E4A5 /* DinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerView.swift; sourceTree = "<group>"; };
+		B4E386B628E0C1D600E1E4A5 /* ColorThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemePicker.swift; sourceTree = "<group>"; };
 		B4EC6D8828D6AB6600DF4A0D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		B4EC6D8A28D6B56900DF4A0D /* NavMenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavMenuButtonView.swift; sourceTree = "<group>"; };
 		B4EC6D8C28D6D13500DF4A0D /* TasksByClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksByClassView.swift; sourceTree = "<group>"; };
@@ -164,6 +174,30 @@
 				B407602928D60FF3004ABCCD /* ClubsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B42B810B28E4B965009EE2E0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B42B810C28E4B976009EE2E0 /* Views */,
+				B42B810D28E4B97B009EE2E0 /* ViewModels */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B42B810C28E4B976009EE2E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B42B810E28E4B9E1009EE2E0 /* OnBoardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B42B810D28E4B97B009EE2E0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		B48EA6EB28B7C8E100102E3B = {
@@ -257,6 +291,9 @@
 				B4EC6D8A28D6B56900DF4A0D /* NavMenuButtonView.swift */,
 				B4E386A628DCD2D700E1E4A5 /* TasksTile.swift */,
 				B4E386A828DCE0B600E1E4A5 /* CheckBoxView.swift */,
+				B4E386B628E0C1D600E1E4A5 /* ColorThemePicker.swift */,
+				B4C1810528E698D4007FB059 /* GlassCard.swift */,
+				B4BBDCFF28E71855001B0282 /* Glass.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -264,11 +301,13 @@
 		B48EA70928B7C9B500102E3B /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				B42B810B28E4B965009EE2E0 /* Onboarding */,
 				B48EA70E28B7CA7000102E3B /* Home */,
 				B48EA70F28B7CA7900102E3B /* Schedule */,
 				B48EA71028B7CA8600102E3B /* Tasks */,
 				B407602628D60FB9004ABCCD /* Clubs */,
 				B48EA71128B7CA8F00102E3B /* More */,
+				B4C1810328E66C70007FB059 /* ColorfulBackgroundView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -637,6 +676,7 @@
 				B4A45CE628B7E40500074739 /* ScheduleView.swift in Sources */,
 				B4E386AB28DFAA6A00E1E4A5 /* MySportsView.swift in Sources */,
 				B4A45D3428BA761100074739 /* DayScheduleTile.swift in Sources */,
+				B4BBDD0028E71856001B0282 /* Glass.swift in Sources */,
 				B48EA71928B7DFC000102E3B /* TabBarItem.swift in Sources */,
 				B4A45D3028BA525100074739 /* Event.swift in Sources */,
 				B4A45CE228B7E3D200074739 /* HomeView.swift in Sources */,
@@ -647,6 +687,7 @@
 				B4E386A928DCE0B600E1E4A5 /* CheckBoxView.swift in Sources */,
 				B44213A428BFDA03004D3253 /* BreakfastData.swift in Sources */,
 				B4A45D2E28B9E7E100074739 /* SVUser.swift in Sources */,
+				B4E386B728E0C1D600E1E4A5 /* ColorThemePicker.swift in Sources */,
 				B48EA70B28B7CA0E00102E3B /* AppView.swift in Sources */,
 				B4A45D2428B93DBB00074739 /* UserColor.swift in Sources */,
 				B4A45D0528B8450D00074739 /* SportsView.swift in Sources */,
@@ -655,6 +696,7 @@
 				B4A45CE828B7E41100074739 /* MoreView.swift in Sources */,
 				B4E386A728DCD2D700E1E4A5 /* TasksTile.swift in Sources */,
 				B44213A028BE690A004D3253 /* Menu.swift in Sources */,
+				B42B810F28E4B9E1009EE2E0 /* OnBoardingView.swift in Sources */,
 				B4A45D0F28B8742D00074739 /* TitleLabel.swift in Sources */,
 				B442139E28BD7106004D3253 /* Food.swift in Sources */,
 				B4A45CD428B7E17400074739 /* TabBarItemViewModifier.swift in Sources */,
@@ -662,6 +704,8 @@
 				B4A45D2228B936FB00074739 /* AccountsViewModel.swift in Sources */,
 				B4E386B328DFB44100E1E4A5 /* DinnerView.swift in Sources */,
 				B4A45D0728B8452000074739 /* EventsView.swift in Sources */,
+				B4C1810628E698D4007FB059 /* GlassCard.swift in Sources */,
+				B4C1810428E66C70007FB059 /* ColorfulBackgroundView.swift in Sources */,
 				B44213A228BE6D9B004D3253 /* MenuRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

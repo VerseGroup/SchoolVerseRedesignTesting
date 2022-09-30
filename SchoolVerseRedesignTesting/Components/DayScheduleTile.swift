@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DayScheduleTile: View {
+    
+    @ObservedObject var userRepo: UserRepository = UserRepository()
     @State var day: DaySchedule
     
     var body: some View {
@@ -26,27 +28,21 @@ struct DayScheduleTile: View {
             
             Spacer()
         }
+        .foregroundColor(Color.white)
         .padding()
         .frame(maxWidth: .infinity)
-        .background(
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.app.secondary)
-                .shadow(color: Color.primary.opacity(0.3), radius: 5, x: 0, y: 2)
-        )
+        .glassCard()
     }
 }
 
 struct DayScheduleTile_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            DayScheduleTile(day: DaySchedule(description: "Day 1", date: Date.now))
-                .padding()
-                .previewLayout(.sizeThatFits)
+        ZStack {
+            ColorfulBackgroundView()
             
             DayScheduleTile(day: DaySchedule(description: "Day 1", date: Date.now))
                 .padding()
-                .previewLayout(.sizeThatFits)
-                .preferredColorScheme(.dark)
+            .previewLayout(.sizeThatFits)
         }
     }
 }

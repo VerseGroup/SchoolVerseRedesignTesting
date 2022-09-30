@@ -16,9 +16,19 @@ extension Color {
 
 
 struct AppTheme {
-    let screen = Color("Screen Color")
-    let text = Color("Text Color")
-    let secondary = Color("Secondary App Color")
+    let screen = Color("Screen System")
+    let screenDark = Color("Screen Dark")
+    let screenLight = Color("Screen Light")
+
+    
+    let text = Color("Text System")
+    let textDark = Color("Text Dark")
+    let textLight = Color("Text Light")
+    
+    let secondary = Color("Secondary System")
+    let secondaryDark = Color("Secondary Dark")
+    let secondaryLight = Color("Secondary Light")
+    
 }
 
 struct AccentColors {

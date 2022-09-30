@@ -19,7 +19,7 @@ struct SportsView: View {
     
     var body: some View {
         ZStack {
-            Color.app.screen.ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView {
                 VStack {
@@ -38,6 +38,8 @@ struct SportsView: View {
                 }
             }
             .navigationTitle("Sports")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

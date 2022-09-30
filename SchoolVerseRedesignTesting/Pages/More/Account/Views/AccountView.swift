@@ -12,7 +12,7 @@ struct AccountView: View {
     
     var body: some View {
         ZStack {
-            Color.app.screen.ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView {
                 VStack {
@@ -27,6 +27,8 @@ struct AccountView: View {
                 }
             }
             .navigationTitle("Account")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
@@ -64,25 +66,11 @@ extension AccountView {
         Group {
             HeaderLabel(name: "Preferences")
             
-            List {
-                Picker(selection: $vm.selectedIndex, content: {
-                    Text(vm.userColors[0].name)
-                    Text(vm.userColors[1].name)
-                    Text(vm.userColors[2].name)
-                    Text(vm.userColors[3].name)
-                }, label: {
-                    Text("Choose Your Accent Color")
-                })
-                .pickerStyle(.inline)
-                
-                Picker("Choose you accent color", selection: $vm.selectedIndex) {
-                    Text(vm.userColors[0].name)
-                    Text(vm.userColors[1].name)
-                    Text(vm.userColors[2].name)
-                    Text(vm.userColors[3].name)
-                }
-                .pickerStyle(.inline)
-            }
+            HeaderLabel(name: "Choose Your App Color")
+                .padding(5)
+            
+            ColorThemePicker(selection: vm.accentSelection)
+            
         }
     }
 }

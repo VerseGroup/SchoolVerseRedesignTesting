@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct CheckBoxView: View {
+    
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     @State var completed: Bool
     
     var body: some View {
         Image(systemName: completed ? "checkmark.circle.fill" : "circle")
+            .foregroundColor(Color.white)
             .font(.system(size: 30))
             .padding(.leading, 5)
             .foregroundColor(Color.app.text)

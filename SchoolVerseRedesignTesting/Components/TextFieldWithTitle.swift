@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TextFieldWithTitle: View {
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     @State var placeholder: String
     @State var info: String
     
@@ -23,25 +25,21 @@ struct TextFieldWithTitle: View {
                 .font(.headline)
                 .fontWeight(.medium)
         }
+        .foregroundColor(Color.white)
         .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.app.secondary)
-        )
+        .glass()
+        
     }
 }
 
 struct TextFieldWithTitle_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            TextFieldWithTitle(placeholder: "Username", info: "danielsp18")
-                .previewLayout(.sizeThatFits)
-                .padding(30)
+        ZStack {
+            ColorfulBackgroundView()
             
             TextFieldWithTitle(placeholder: "Username", info: "danielsp18")
                 .previewLayout(.sizeThatFits)
-                .padding(30)
-                .preferredColorScheme(.dark)
+            .padding(30)
         }
     }
 }

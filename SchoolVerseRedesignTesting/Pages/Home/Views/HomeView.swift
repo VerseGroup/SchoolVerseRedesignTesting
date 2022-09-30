@@ -12,8 +12,7 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            Color.app.screen
-                .ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 0) {
@@ -29,8 +28,10 @@ struct HomeView: View {
                         .frame(height: 50)
                 }
             }
-            //.navigationTitle("Hello, \(String(describing: $userRepo.userInfo.preferredFirst))")
-            .navigationTitle("Hello, DSP")
+            .navigationTitle("Hello, \(userRepo.first)")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
+
         }
         
     }
@@ -78,6 +79,20 @@ extension HomeView {
                        start: "9:55", end: "10:55"), dashBoardTitle: "Next Free")
             .padding(.horizontal)
         }
+    }
+}
+
+extension HomeView {
+    func getAttributedString()-> AttributedString {
+        var attStr = AttributedString("Hello, \(userRepo.first)")
+        
+        attStr.foregroundColor = userRepo.accent.color
+        
+        if let range = attStr.range(of: userRepo.first) {
+            attStr[range].foregroundColor = userRepo.accent.color
+        }
+        
+        return attStr
     }
 }
 

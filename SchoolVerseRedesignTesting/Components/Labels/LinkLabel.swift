@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LinkLabel: View {
     
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     @State var name: String
     @State var link: String
     
@@ -26,25 +28,15 @@ struct LinkLabel: View {
             Spacer()
         }
         .padding()
-        .foregroundColor(Color.blue)
-        .background(
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.app.secondary)
-        )
+        .foregroundColor(Color.accent.cyan)
+        .glass()
     }
 }
 
 struct LinkLabel_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            LinkLabel(name: "SchoolVerse by VerseGroup, LLC", link: "https://www.versegroup.tech")
-                .previewLayout(.sizeThatFits)
-                .padding(30)
-            
-            LinkLabel(name: "SchoolVerse by VerseGroup, LLC", link: "https://www.versegroup.tech")
-                .previewLayout(.sizeThatFits)
-                .padding(30)
-                .preferredColorScheme(.dark)
-        }
+        LinkLabel(name: "SchoolVerse by VerseGroup, LLC", link: "https://www.versegroup.tech")
+            .previewLayout(.sizeThatFits)
+            .padding(30)
     }
 }

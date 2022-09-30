@@ -12,25 +12,33 @@ struct ClubsView: View {
     
     var body: some View {
         ZStack {
-            Color.app.screen
-                .ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 30) {
-                    Image(systemName: "gear")
-                        .font(.system(size: 200))
-                        .foregroundStyle(userRepo.accent.color.gradient)
+                    Spacer()
+                        .frame(height: 75)
                     
-                    Text("Coming Soon...")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(userRepo.accent.color)
+                    VStack (spacing: 25){
+                        Image(systemName: "gear")
+                            .font(.system(size: 200))
+                            .foregroundColor(Color.white)
+                        
+                        Text("Coming Soon...")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                    }
+                    .padding(30)
+                    .glassCard()
                     
                     Spacer()
                         .frame(height: 75)
                 }
             }
             .navigationTitle("Clubs")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

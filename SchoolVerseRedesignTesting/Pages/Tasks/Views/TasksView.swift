@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct TasksView: View {
+    
+    @ObservedObject var userRepo: UserRepository = UserRepository()
     @State var sort: Int = 1
     
     var body: some View {
         ZStack {
-            Color.app.screen
-                .ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 0) {
@@ -42,6 +43,8 @@ struct TasksView: View {
                     
                 } //: ToolbarItem
             } //: toolbar
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

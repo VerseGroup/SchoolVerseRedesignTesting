@@ -10,9 +10,11 @@
 import SwiftUI
 
 struct AboutView: View {
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     var body: some View {
         ZStack {
-            Color.app.screen.ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView(showsIndicators: false) {
                 VStack {
@@ -27,6 +29,8 @@ struct AboutView: View {
                 }
             }
             .navigationTitle("About")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
@@ -67,12 +71,8 @@ extension AboutView {
             )
             .padding(.horizontal, 10)
             
-            HeaderLabel(name: "Our Repositories") .padding(.horizontal, 8)
             
-            LinkLabel(name: "Frontend Repository", link: "https://github.com/VerseGroup/SchoolVerse-iOS")
-                .padding(10)
-            
-            LinkLabel(name: "Backend Repository", link: "https://github.com/VerseGroup/SchoolVerse-webscraper")
+            LinkLabel(name: "Click to visit our Github", link: "https://github.com/VerseGroup")
                 .padding(10)
         }
     }

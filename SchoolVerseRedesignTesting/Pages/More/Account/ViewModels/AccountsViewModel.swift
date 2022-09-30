@@ -8,14 +8,10 @@
 import Foundation
 import SwiftUI
 
-class AccountsViewModel: ObservableObject {   
-    @Published var userColors: [UserColor] = [
-        UserColor(name: "Blue", color: Color.accent.blue),
-        UserColor(name: "Cyan", color: Color.accent.cyan),
-        UserColor(name: "Pink", color: Color.accent.pink),
-        UserColor(name: "Purple", color: Color.accent.purple)
-    ]
+class AccountsViewModel: ObservableObject {
+    @Published var userRepo: UserRepository = UserRepository()
     
-    @Published var selectedIndex: Int = 0
+    @Published var accentSelection: Int = 3
+    @Published var modeSelection: Int = 0
     
 }

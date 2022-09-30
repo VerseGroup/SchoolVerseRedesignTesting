@@ -9,10 +9,11 @@ import SwiftUI
 
 struct MoreView: View {
     
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     var body: some View {
         ZStack {
-            Color.app.screen
-                .ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView(showsIndicators: false) {
                 Grid(horizontalSpacing: 20, verticalSpacing: 20) {
@@ -65,6 +66,8 @@ struct MoreView: View {
                     .frame(height: 50)
             } //: Scroll View
             .navigationTitle("More")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
         } //: ZStack
     } //: body
 } //: More View

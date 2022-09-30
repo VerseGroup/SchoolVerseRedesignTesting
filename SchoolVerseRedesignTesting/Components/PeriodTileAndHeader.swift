@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PeriodTileAndHeader: View {
+    
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     @State var periodInfo: Period
     @State var dashBoardTitle: String?
     
@@ -38,25 +41,10 @@ struct PeriodTileAndHeader: View {
                         .fontWeight(.semibold)
                 }
             }
+            .foregroundColor(Color.white)
             .padding()
             .padding(.leading, 10)
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.app.secondary)
-                    .shadow(color: Color.primary.opacity(0.2), radius: 3, x: 0, y: 2)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(periodInfo.classInfo.color.color)
-                            .frame(width: 15)
-                            .offset(x: -184, y: 0)
-                            .overlay{
-                                Rectangle()
-                                    .fill(periodInfo.classInfo.color.color)
-                                    .frame(width: 7)
-                                    .offset(x: -180, y: 0)
-                            }
-                    }
-            )
+            .glassCard()
         }
     }
 }
@@ -65,7 +53,7 @@ struct PeriodTileAndHeader_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ZStack {
-                Color.app.screen.ignoresSafeArea()
+                ColorfulBackgroundView()
 
                 PeriodTileAndHeader(
                     periodInfo: Period(
@@ -77,24 +65,6 @@ struct PeriodTileAndHeader_Previews: PreviewProvider {
                     
                 )
                 .padding()
-                
-                    
-            }
-            
-            ZStack {
-                Color.app.screen.ignoresSafeArea()
-                
-                PeriodTileAndHeader(
-                    periodInfo: Period(
-                        classInfo:
-                            Class(title: "POST-AP DATA ANALYTICS & VISUALIZATION - MAJOR -1", teacher: "Mr. Shaw", room: "G207", color: .green),
-                        order: .period2,
-                        start: "11:00",
-                        end: "12:00")
-                )
-                .padding()
-                .preferredColorScheme(.dark)
-                
             }
         }
     }

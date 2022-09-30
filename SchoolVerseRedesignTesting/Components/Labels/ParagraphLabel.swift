@@ -9,33 +9,26 @@ import SwiftUI
 
 struct ParagraphLabel: View {
     
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     @State var name: String
     
     var body: some View {
         Text(name)
             .fontWeight(.semibold)
+            .foregroundColor(Color.white)
             .font(.subheadline)
             .padding()
             .multilineTextAlignment(.leading)
             .frame(maxWidth: .infinity)
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.app.secondary)
-            )
+            .glass()
     }
 }
 
 struct ParagraphLabel_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ParagraphLabel(name: "SchoolVerse by VerseGroup, LLC")
-                .previewLayout(.sizeThatFits)
-                .padding(30)
-            
-            ParagraphLabel(name: "SchoolVerse by VerseGroup, LLC")
-                .previewLayout(.sizeThatFits)
-                .padding(30)
-                .preferredColorScheme(.dark)
-        }
+        ParagraphLabel(name: "SchoolVerse by VerseGroup, LLC")
+            .previewLayout(.sizeThatFits)
+            .padding(30)
     }
 }

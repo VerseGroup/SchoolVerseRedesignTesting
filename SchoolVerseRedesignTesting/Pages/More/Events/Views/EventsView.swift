@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct EventsView: View {
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     var body: some View {
         ZStack {
-            Color.app.screen.ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView {
                 VStack {
@@ -18,6 +20,8 @@ struct EventsView: View {
                 }
             }
             .navigationTitle("Events")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

@@ -23,26 +23,21 @@ struct MoreInfoCardView: View, Identifiable {
             Text(name)
                 .font(.title2)
         }
-        .foregroundStyle(Color.white.shadow(.drop(radius: 1, y: 2)))
+        .foregroundColor(Color.white)
         .padding()
         .frame(width: 175, height: 200)
-        .background(userRepo.accent.color.gradient)
-        .cornerRadius(10)
-        .shadow(color: userRepo.accent.color.opacity(0.3), radius: 5, x: 0, y: 5)
+        .glassCard()
     }
 }
 
 struct MoreInfoCardView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            MoreInfoCardView(imageName: "link.badge.plus", name: "Linking")
-                .previewLayout(.sizeThatFits)
-                .padding(30)
+        ZStack {
+            ColorfulBackgroundView()
             
             MoreInfoCardView(imageName: "link.badge.plus", name: "Linking")
                 .previewLayout(.sizeThatFits)
-                .padding(30)
-                .preferredColorScheme(.dark)
+            .padding(30)
         }
     }
         

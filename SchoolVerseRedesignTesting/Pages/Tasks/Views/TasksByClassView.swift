@@ -37,7 +37,7 @@ extension TasksByClassView {
         }
         .padding(.horizontal)
         .padding(5)
-        .tint(Color.app.text)
+        .tint(Color.white)
     }
     
     var calcBC: some View {
@@ -56,7 +56,7 @@ extension TasksByClassView {
         }
         .padding(.horizontal)
         .padding(5)
-        .tint(Color.app.text)
+        .tint(Color.white)
     }
     
     var stats: some View {
@@ -75,7 +75,7 @@ extension TasksByClassView {
         }
         .padding(.horizontal)
         .padding(5)
-        .tint(Color.app.text)
+        .tint(Color.white)
     }
     
     var english: some View {
@@ -89,7 +89,7 @@ extension TasksByClassView {
         }
         .padding(.horizontal)
         .padding(5)
-        .tint(Color.app.text)
+        .tint(Color.white)
     }
     
     var jazzCombos: some View {
@@ -103,7 +103,7 @@ extension TasksByClassView {
         }
         .padding(.horizontal)
         .padding(5)
-        .tint(Color.app.text)
+        .tint(Color.white)
     }
 }
 

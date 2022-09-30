@@ -18,7 +18,7 @@ struct MenuView: View {
     
     var body: some View {
         ZStack {
-            Color.app.screen.ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView {
                 VStack {
@@ -41,6 +41,8 @@ struct MenuView: View {
                 }
             }
             .navigationTitle("Menu")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct LinkedAccountsView: View {
+    
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     var body: some View {
         ZStack {
-            Color.app.screen.ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView {
                 VStack{
@@ -23,6 +26,8 @@ struct LinkedAccountsView: View {
                 }
             }
             .navigationTitle("Linked Accounts")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
@@ -40,7 +45,7 @@ extension LinkedAccountsView {
             
             Button(action: {}, label: {
                 DestructiveButtonLabel(name: "Unlink Account")
-                    .padding(10)
+                    .padding(15)
             })
         }
     }
@@ -59,7 +64,7 @@ extension LinkedAccountsView {
             
             Button(action: {}, label: {
                 DestructiveButtonLabel(name: "Unlink Account")
-                    .padding(10)
+                    .padding(15)
             })
         }
     }

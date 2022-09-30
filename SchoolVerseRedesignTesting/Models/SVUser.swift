@@ -14,29 +14,11 @@ struct SVUser {
     var preferredFirst: String
     var grade: Int
     
-    var lightTheme: LightTheme
     var accentColor: AccentColor
     
     var schedule: Schedule
     var classes: [Class]
     var sports: [String]
-}
-
-enum LightTheme {
-    case alwaysLight
-    case alwaysDark
-    case systemMode
-    
-    var description: String {
-        switch self {
-        case .alwaysLight:
-            return "Light"
-        case .alwaysDark:
-            return "Dark"
-        default:
-            return "System"
-        }
-    }
 }
 
 enum AccentColor {

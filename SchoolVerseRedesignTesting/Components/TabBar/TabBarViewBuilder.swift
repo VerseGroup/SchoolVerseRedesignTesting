@@ -14,6 +14,8 @@ import SwiftUI
 /// Tabs are loaded lazily, as they are selected. Each tab's .onAppear will only be called on first appearance. Set DisplayStyle to .vStack to position TabBar vertically below the Content. Use .zStack to put the TabBar in front of the Content .
 struct TabBarViewBuilder<Content:View, TabBar: View>: View {
     
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     public enum DisplayStyle {
         case vStack
         case zStack
@@ -37,16 +39,21 @@ struct TabBarViewBuilder<Content:View, TabBar: View>: View {
     }
     
     @ViewBuilder var layout: some View {
+        
+        
+        
         switch style {
         case .vStack:
             VStack(spacing: 0) {
                 ZStack {
+                    ColorfulBackgroundView()
+                    
                     content
                 }
                 //.frame(maxWidth: .infinity, maxHeight: .infinity)
                 
                 tabBar
-                    .foregroundColor(Color.app.screen)
+                
             }
         case .zStack:
             ZStack(alignment: .bottom) {

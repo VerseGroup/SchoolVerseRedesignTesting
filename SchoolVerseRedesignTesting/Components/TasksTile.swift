@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TasksTile: View {
+    
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     @State var task: Task?
     @State var completed: Bool
     @State var classInfo: Class
@@ -34,11 +37,10 @@ struct TasksTile: View {
             }
         } //: VStack
         .frame(maxWidth: .infinity)
+        .foregroundColor(Color.white)
         .padding()
         .padding(.leading, 10)
-        .background(
-            overlay
-        ) //: background
+        .glassCard()
     } //: body
 } //: TasksTile
 
@@ -75,29 +77,11 @@ extension TasksTile {
         }
     }
     
-    var overlay: some View {
-        RoundedRectangle(cornerRadius: 10)
-            .fill(Color.app.secondary)
-            .shadow(color: Color.primary.opacity(0.2), radius: 3, x: 0, y: 2)
-            .overlay{
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(classInfo.color.color)
-                    .frame(width: 15)
-                    .offset(x: -185, y: 0)
-                    .overlay {
-                        Rectangle()
-                            .fill(classInfo.color.color)
-                            .frame(width: 9)
-                            .offset(x: -179, y: 0)
-                    } //: Rectangle Overlay
-            } //: RoundedRect Overlay
-    } //: overlay
-    
     var noAssignments: some View {
         HStack {
             Text("No assignments soon!!")
                 .font(.headline)
-            .fontWeight(.bold)
+                .fontWeight(.bold)
             
             Spacer()
         }
@@ -106,18 +90,22 @@ extension TasksTile {
 
 struct TasksTile_Previews: PreviewProvider {
     static var previews: some View {
-        TasksTile(task:
-                    Task(
-                        classInfo:
-                            Class(
+        ZStack {
+            ColorfulBackgroundView()
+            
+            TasksTile(task:
+                        Task(
+                            classInfo:
+                                Class(
+                                    title: "AP STATISTICS: 309-1",
+                                    color: .red),
+                            name: "Homework #6 Section 1.3: #114, 121, 122, 123-126",
+                            description: "",
+                            completed: false,
+                            dueDate: Date.now), completed: true, classInfo: Class(
                                 title: "AP STATISTICS: 309-1",
-                                color: .red),
-                        name: "Homework #6 Section 1.3: #114, 121, 122, 123-126",
-                        description: "",
-                        completed: false,
-                        dueDate: Date.now), completed: true, classInfo: Class(
-                            title: "AP STATISTICS: 309-1",
-                            color: .red))
-        .padding()
+                                color: .red))
+            .padding()
+        }
     }
 }

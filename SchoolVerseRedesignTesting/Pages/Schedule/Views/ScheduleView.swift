@@ -12,8 +12,7 @@ struct ScheduleView: View {
     
     var body: some View {
         ZStack {
-            Color.app.screen
-                .ignoresSafeArea()
+            ColorfulBackgroundView()
             
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 0) {
@@ -40,6 +39,8 @@ struct ScheduleView: View {
                 }
             }
             .navigationTitle("Schedule")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

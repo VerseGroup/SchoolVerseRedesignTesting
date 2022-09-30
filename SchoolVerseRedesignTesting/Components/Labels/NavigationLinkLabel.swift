@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct NavigationLinkLabel: View {
+    
+    @ObservedObject var userRepo: UserRepository = UserRepository()
+    
     @State var name: String
     
     var body: some View {
@@ -23,25 +26,19 @@ struct NavigationLinkLabel: View {
                 .font(.headline)
                 .padding()
         }
-        .foregroundColor(Color.app.text)
-        .background(
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.app.secondary)
-        )
+        .foregroundColor(Color.white)
+        .glass()
     }
 }
 
 struct NavigationLinkLabel_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            NavigationLinkLabel(name: "SchoolVerse by VerseGroup, LLC")
-                .previewLayout(.sizeThatFits)
-                .padding(30)
+        ZStack {
+            ColorfulBackgroundView()
             
             NavigationLinkLabel(name: "SchoolVerse by VerseGroup, LLC")
                 .previewLayout(.sizeThatFits)
-                .padding(30)
-                .preferredColorScheme(.dark)
+            .padding(30)
         }
     }
 }
