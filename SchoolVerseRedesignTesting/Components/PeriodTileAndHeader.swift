@@ -44,7 +44,7 @@ struct PeriodTileAndHeader: View {
             .foregroundColor(Color.white)
             .padding()
             .padding(.leading, 10)
-            .glassCard()
+            .glassCardFull()
         }
     }
 }

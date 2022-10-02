@@ -15,7 +15,7 @@ struct NavMenuButtonView: View {
             .foregroundColor(userRepo.accent.color)
             .font(.system(size:25))
             .padding()
-            .padding(.leading)
+            .heavyGlass()
     }
 }
 

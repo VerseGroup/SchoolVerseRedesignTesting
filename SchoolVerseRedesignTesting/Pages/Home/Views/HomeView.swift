@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var userRepo: UserRepository = UserRepository()
-    
+        
     var body: some View {
         ZStack {
             ColorfulBackgroundView()
@@ -29,8 +29,6 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("Hello, \(userRepo.first)")
-            .toolbarColorScheme(.dark, for: .navigationBar)
-            //.toolbarBackground(.visible, for: .navigationBar)
 
         }
         

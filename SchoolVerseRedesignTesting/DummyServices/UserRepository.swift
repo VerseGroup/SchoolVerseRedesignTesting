@@ -36,7 +36,7 @@ class UserRepository: ObservableObject {
     @Published var assembly: Class = Class(title: "ASSEMBLY", color: .none)
     @Published var lunch: Class = Class(title: "Lunch", color: .none)
     
-    @Published var accent: AccentColor = .cyan
+    @Published var accent: AccentColor = .cyan 
     @Published var first: String = "Daniel"
     
     init() {

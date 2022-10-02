@@ -56,6 +56,8 @@
 		B4A45D3428BA761100074739 /* DayScheduleTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3328BA761000074739 /* DayScheduleTile.swift */; };
 		B4A45D3628BABA7500074739 /* PeriodTileAndHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */; };
 		B4BBDD0028E71856001B0282 /* Glass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDCFF28E71855001B0282 /* Glass.swift */; };
+		B4BBDD0228E76EE6001B0282 /* FullGlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD0128E76EE6001B0282 /* FullGlassCard.swift */; };
+		B4BBDD0428E76F6E001B0282 /* HeavyGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD0328E76F6E001B0282 /* HeavyGlass.swift */; };
 		B4C1810428E66C70007FB059 /* ColorfulBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1810328E66C70007FB059 /* ColorfulBackgroundView.swift */; };
 		B4C1810628E698D4007FB059 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1810528E698D4007FB059 /* GlassCard.swift */; };
 		B4E386A728DCD2D700E1E4A5 /* TasksTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E386A628DCD2D700E1E4A5 /* TasksTile.swift */; };
@@ -124,6 +126,9 @@
 		B4A45D3328BA761000074739 /* DayScheduleTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayScheduleTile.swift; sourceTree = "<group>"; };
 		B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodTileAndHeader.swift; sourceTree = "<group>"; };
 		B4BBDCFF28E71855001B0282 /* Glass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glass.swift; sourceTree = "<group>"; };
+		B4BBDD0128E76EE6001B0282 /* FullGlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullGlassCard.swift; sourceTree = "<group>"; };
+		B4BBDD0328E76F6E001B0282 /* HeavyGlass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeavyGlass.swift; sourceTree = "<group>"; };
+		B4BBDD0528E91A6F001B0282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B4C1810328E66C70007FB059 /* ColorfulBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulBackgroundView.swift; sourceTree = "<group>"; };
 		B4C1810528E698D4007FB059 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
 		B4E386A628DCD2D700E1E4A5 /* TasksTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTile.swift; sourceTree = "<group>"; };
@@ -219,6 +224,7 @@
 		B48EA6F628B7C8E100102E3B /* SchoolVerseRedesignTesting */ = {
 			isa = PBXGroup;
 			children = (
+				B4BBDD0528E91A6F001B0282 /* Info.plist */,
 				B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */,
 				B48EA70A28B7CA0E00102E3B /* AppView.swift */,
 				B48EA71628B7CB1000102E3B /* RouterView.swift */,
@@ -293,7 +299,9 @@
 				B4E386A828DCE0B600E1E4A5 /* CheckBoxView.swift */,
 				B4E386B628E0C1D600E1E4A5 /* ColorThemePicker.swift */,
 				B4C1810528E698D4007FB059 /* GlassCard.swift */,
+				B4BBDD0128E76EE6001B0282 /* FullGlassCard.swift */,
 				B4BBDCFF28E71855001B0282 /* Glass.swift */,
+				B4BBDD0328E76F6E001B0282 /* HeavyGlass.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -679,7 +687,9 @@
 				B4BBDD0028E71856001B0282 /* Glass.swift in Sources */,
 				B48EA71928B7DFC000102E3B /* TabBarItem.swift in Sources */,
 				B4A45D3028BA525100074739 /* Event.swift in Sources */,
+				B4BBDD0428E76F6E001B0282 /* HeavyGlass.swift in Sources */,
 				B4A45CE228B7E3D200074739 /* HomeView.swift in Sources */,
+				B4BBDD0228E76EE6001B0282 /* FullGlassCard.swift in Sources */,
 				B4A45D0328B8450200074739 /* MenuView.swift in Sources */,
 				B4EC6D8F28D6D14B00DF4A0D /* TasksByDateView.swift in Sources */,
 				B4A45D2628B9B89B00074739 /* Schedule.swift in Sources */,
@@ -839,11 +849,13 @@
 				DEVELOPMENT_TEAM = F9RDZ5259N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SchoolVerseRedesignTesting/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "SchoolVerse Redesign";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -873,11 +885,13 @@
 				DEVELOPMENT_TEAM = F9RDZ5259N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SchoolVerseRedesignTesting/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "SchoolVerse Redesign";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;

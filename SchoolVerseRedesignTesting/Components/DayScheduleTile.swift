@@ -31,7 +31,7 @@ struct DayScheduleTile: View {
         .foregroundColor(Color.white)
         .padding()
         .frame(maxWidth: .infinity)
-        .glassCard()
+        .glassCardFull()
     }
 }
 

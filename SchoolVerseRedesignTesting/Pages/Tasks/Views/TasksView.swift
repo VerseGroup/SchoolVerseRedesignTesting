@@ -43,8 +43,6 @@ struct TasksView: View {
                     
                 } //: ToolbarItem
             } //: toolbar
-            .toolbarColorScheme(.dark, for: .navigationBar)
-            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

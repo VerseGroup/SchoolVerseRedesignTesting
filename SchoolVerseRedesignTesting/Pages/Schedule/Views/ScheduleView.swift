@@ -39,8 +39,6 @@ struct ScheduleView: View {
                 }
             }
             .navigationTitle("Schedule")
-            .toolbarColorScheme(.dark, for: .navigationBar)
-            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
