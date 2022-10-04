@@ -58,7 +58,7 @@ struct PeriodTileAndHeader_Previews: PreviewProvider {
                 PeriodTileAndHeader(
                     periodInfo: Period(
                         classInfo:
-                            Class(title: "Lunch", color: .none),
+                            Class(title: "Lunch"),
                         order: .lunchB,
                         start: "12:30",
                         end: "1:00")

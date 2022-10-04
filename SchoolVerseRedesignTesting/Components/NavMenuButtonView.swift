@@ -14,7 +14,8 @@ struct NavMenuButtonView: View {
         Image(systemName: "line.horizontal.3.decrease")
             .foregroundColor(userRepo.accent.color)
             .font(.system(size:25))
-            .padding()
+            .padding(7)
+            .padding(.horizontal, 5)
             .heavyGlass()
     }
 }

@@ -13,30 +13,30 @@ class UserRepository: ObservableObject {
     //Classes and Activies
     
     //Majors
-    @Published var english: Class = Class(title: "ENGLISH 12 - PANOPTICON PRIME -3", teacher: "Mr. Lobko", room: "R122", color: .yellow)
-    @Published var dataScience: Class = Class(title: "POST-AP DATA ANALYTICS & VISUALIZATION - MAJOR -1", teacher: "Mr. Shaw", room: "G207", color: .green)
-    @Published var physics: Class = Class(title: "ADVANCED PHYSICS -2", teacher: "Mr. Karpinski", room: "S018", color: .blue)
-    @Published var calcBC: Class = Class(title: "AP CALCULUS (BC) -1", teacher: "Ms. Wright", room: "R221", color: .lightBlue)
-    @Published var stats: Class = Class(title: "AP STATISTICS -3", teacher: "Ms. Gruenberg", room: "R222", color: .red)
+    @Published var english: Class = Class(title: "ENGLISH 12 - PANOPTICON PRIME -3", teacher: "Mr. Lobko", room: "R122")
+    @Published var dataScience: Class = Class(title: "POST-AP DATA ANALYTICS & VISUALIZATION - MAJOR -1", teacher: "Mr. Shaw", room: "G207")
+    @Published var physics: Class = Class(title: "ADVANCED PHYSICS -2", teacher: "Mr. Karpinski", room: "S018")
+    @Published var calcBC: Class = Class(title: "AP CALCULUS (BC) -1", teacher: "Ms. Wright", room: "R221")
+    @Published var stats: Class = Class(title: "AP STATISTICS -3", teacher: "Mr. Gruenberg", room: "R222")
     
     //Minors
-    @Published var jazz: Class =  Class(title: "JAZZ COMBOS", teacher: "Dr. Malkiel", room: "Band Room 2", color: .orange)
-    @Published var appDev: Class = Class(title: "POST-AP MOBILE APP DEVELOPMENT - MINOR -1", teacher: "Mrs. Tranchida", room: "G201", color: .purple)
+    @Published var jazz: Class =  Class(title: "JAZZ COMBOS", teacher: "Dr. Malkiel", room: "Band Room 2")
+    @Published var appDev: Class = Class(title: "POST-AP MOBILE APP DEVELOPMENT - MINOR -1", teacher: "Mrs. Tranchida", room: "G201")
     
     //Clubs
-    @Published var csClub: Class = Class(title: "HACKLEY CS CLUB", room: "G201", color: .lime)
-    @Published var mpClub: Class = Class(title: "MUSIC PRODUCTION CLUB", room: "G201", color: .lime)
-    @Published var yearbook: Class = Class(title: "YEARBOOK COMMITTEE", teacher: "Ms. Bottalico", room: "Photo Lab", color: .lime)
+    @Published var csClub: Class = Class(title: "HACKLEY CS CLUB", room: "G201")
+    @Published var mpClub: Class = Class(title: "MUSIC PRODUCTION CLUB", room: "G201")
+    @Published var yearbook: Class = Class(title: "YEARBOOK COMMITTEE", teacher: "Ms. Bottalico", room: "Photo Lab")
     
     //Other Periods
-    @Published var free: Class = Class(title: "Free Period!", color: .none)
-    @Published var homeroom: Class = Class(title: "HOMEROOM", teacher: "Mr. Sykes", room: "G108", color: .none)
-    @Published var advisory: Class = Class(title: "ADVISORY", teacher: "Mr. Francis", room: "G113", color: .none)
-    @Published var gradeMeeting: Class = Class(title: "GRADE MEETING", color: .none)
-    @Published var assembly: Class = Class(title: "ASSEMBLY", color: .none)
-    @Published var lunch: Class = Class(title: "Lunch", color: .none)
+    @Published var free: Class = Class(title: "Free Period!")
+    @Published var homeroom: Class = Class(title: "HOMEROOM", teacher: "Mr. Sykes", room: "G108")
+    @Published var advisory: Class = Class(title: "ADVISORY", teacher: "Mr. Francis", room: "G113")
+    @Published var gradeMeeting: Class = Class(title: "GRADE MEETING")
+    @Published var assembly: Class = Class(title: "ASSEMBLY")
+    @Published var lunch: Class = Class(title: "Lunch")
     
-    @Published var accent: AccentColor = .cyan 
+    @Published var accent: AccentColor = .cyan
     @Published var first: String = "Daniel"
     
     init() {

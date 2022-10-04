@@ -42,19 +42,20 @@ class LunchData {
                 servingSizeAmount: "4",
                 servingSizeUnit: "oz"))
     
-//    var chickenNoodle: Food =
-//    Food(
-//        name: "Chicken Noodle Soup", course: .soup,
-//        nutrition:
-//            Nutrition(
-//                calories: 113,
-//                gramsCarbs: 13.8,
-//                gramsFat: 2,
-//                gramsProtein: 9.9,
-//                gramsSugar: 1.4,
-//                mgSodium: 156.8),
-//        servingSize:
-//            ServingSize(
-//                servingSizeAmount: "1",
-//                servingSizeUnit: "cup"))
+    
+    var chickenNoodle: Food =
+    Food(
+        name: "Chicken Noodle Soup", course: .soup,
+        nutrition:
+            Nutrition(
+                calories: 113,
+                gramsCarbs: 13.8,
+                gramsFat: 2,
+                gramsProtein: 9.9,
+                gramsSugar: 1.4,
+                mgSodium: 156.8),
+        servingSize:
+            ServingSize(
+                servingSizeAmount: "1",
+                servingSizeUnit: "cup"))
 }

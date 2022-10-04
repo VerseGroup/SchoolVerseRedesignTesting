@@ -27,8 +27,6 @@ struct AccountView: View {
                 }
             }
             .navigationTitle("Account")
-            .toolbarColorScheme(.dark, for: .navigationBar)
-            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

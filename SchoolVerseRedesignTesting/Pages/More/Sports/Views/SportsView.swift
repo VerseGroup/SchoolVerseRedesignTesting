@@ -21,28 +21,37 @@ struct SportsView: View {
         ZStack {
             ColorfulBackgroundView()
             
-            ScrollView {
-                VStack {
-                    Picker("", selection: $selection) {
-                        Text("My Sports").tag(0)
-                        Text("All Sports").tag(1)
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    .padding()
-                    
-                    if selection == 0 {
-                        MySportsView()
-                    } else { // selection == 1
-                        AllSportsView()
-                    }
+
+            VStack {
+                Picker("", selection: $selection) {
+                    Text("My Sports").tag(0)
+                    Text("All Sports").tag(1)
                 }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding()
+                
+                selectedPage
+                
+                Spacer()
             }
             .navigationTitle("Sports")
-            .toolbarColorScheme(.dark, for: .navigationBar)
-            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
+
+extension SportsView {
+    @ViewBuilder var selectedPage: some View {
+        switch selection {
+        case 0:
+            MySportsView()
+        case 1:
+            AllSportsView()
+        default:
+            MySportsView()
+        }
+    }
+}
+
 
 struct SportsView_Previews: PreviewProvider {
     static var previews: some View {

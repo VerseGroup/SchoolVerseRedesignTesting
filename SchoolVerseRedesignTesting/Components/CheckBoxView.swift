@@ -18,7 +18,6 @@ struct CheckBoxView: View {
             .foregroundColor(Color.white)
             .font(.system(size: 30))
             .padding(.leading, 5)
-            .foregroundColor(Color.app.text)
     }
 }
 

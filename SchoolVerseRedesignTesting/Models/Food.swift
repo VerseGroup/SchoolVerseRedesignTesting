@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Food {
+struct Food: Identifiable {
     var id: UUID = UUID()
     var name: String
     var course: CourseType

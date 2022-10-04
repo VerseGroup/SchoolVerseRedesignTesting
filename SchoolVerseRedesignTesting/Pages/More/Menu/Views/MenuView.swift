@@ -20,29 +20,35 @@ struct MenuView: View {
         ZStack {
             ColorfulBackgroundView()
             
-            ScrollView {
-                VStack {
-                    Picker("", selection: $selection) {
-                        Text("Breakfast").tag(0)
-                        Text("Lunch").tag(1)
-                        Text("Dinner").tag(2)
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    .padding()
-                    
-                    if selection == 0 {
-                        BreakfastView()
-                    } else if selection == 2 {
-                        DinnerView()
-                    } else { // selection = 1
-                        LunchView()
-                    }
-                    
+            VStack {
+                Picker("", selection: $selection) {
+                    Text("Breakfast").tag(0)
+                    Text("Lunch").tag(1)
+                    Text("Dinner").tag(2)
                 }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding()
+                
+                selectedPage
+                
+                Spacer()
             }
             .navigationTitle("Menu")
-            .toolbarColorScheme(.dark, for: .navigationBar)
-            //.toolbarBackground(.visible, for: .navigationBar)
+        }
+    }
+}
+
+extension MenuView {
+    @ViewBuilder var selectedPage: some View {
+        switch selection {
+        case 0:
+            BreakfastView()
+        case 1:
+            LunchView()
+        case 2:
+            DinnerView()
+        default:
+            LunchView()
         }
     }
 }

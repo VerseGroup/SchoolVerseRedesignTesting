@@ -97,14 +97,12 @@ struct TasksTile_Previews: PreviewProvider {
                         Task(
                             classInfo:
                                 Class(
-                                    title: "AP STATISTICS: 309-1",
-                                    color: .red),
+                                    title: "AP STATISTICS: 309-1"),
                             name: "Homework #6 Section 1.3: #114, 121, 122, 123-126",
                             description: "",
                             completed: false,
                             dueDate: Date.now), completed: true, classInfo: Class(
-                                title: "AP STATISTICS: 309-1",
-                                color: .red))
+                                title: "AP STATISTICS: 309-1"))
             .padding()
         }
     }

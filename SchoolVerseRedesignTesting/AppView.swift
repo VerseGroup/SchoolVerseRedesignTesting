@@ -42,6 +42,7 @@ struct AppView: View {
             TabBarView(tabs: tabs, selection: $selection, localSelection: selection)
         }
         .colorScheme(.dark)
+        .navigationBarHidden(true)
     }
 }
 

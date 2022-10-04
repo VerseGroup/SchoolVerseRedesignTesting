@@ -58,6 +58,18 @@
 		B4BBDD0028E71856001B0282 /* Glass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDCFF28E71855001B0282 /* Glass.swift */; };
 		B4BBDD0228E76EE6001B0282 /* FullGlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD0128E76EE6001B0282 /* FullGlassCard.swift */; };
 		B4BBDD0428E76F6E001B0282 /* HeavyGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD0328E76F6E001B0282 /* HeavyGlass.swift */; };
+		B4BBDD0728E929A5001B0282 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD0628E929A4001B0282 /* MenuViewModel.swift */; };
+		B4BBDD0A28E9FF47001B0282 /* DatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD0928E9FF47001B0282 /* DatePickerViewModel.swift */; };
+		B4BBDD0C28E9FFB9001B0282 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD0B28E9FFB9001B0282 /* DatePickerView.swift */; };
+		B4BBDD0E28EA01AC001B0282 /* CalendarViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD0D28EA01AC001B0282 /* CalendarViewBuilder.swift */; };
+		B4BBDD1128EA2641001B0282 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD1028EA2641001B0282 /* MenuItemView.swift */; };
+		B4BBDD1328EA2B34001B0282 /* TaintedGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD1228EA2B34001B0282 /* TaintedGlass.swift */; };
+		B4BBDD1628EA3322001B0282 /* DayMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD1528EA3322001B0282 /* DayMenuView.swift */; };
+		B4BBDD1828EB3A65001B0282 /* EventsTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD1728EB3A65001B0282 /* EventsTile.swift */; };
+		B4BBDD1A28EBB04E001B0282 /* EventsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD1928EBB04E001B0282 /* EventsRepository.swift */; };
+		B4BBDD1C28EBB1D5001B0282 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD1B28EBB1D4001B0282 /* EventsViewModel.swift */; };
+		B4BBDD1E28EC7D92001B0282 /* SportsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD1D28EC7D92001B0282 /* SportsRepository.swift */; };
+		B4BBDD2028EC94AA001B0282 /* SportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BBDD1F28EC94AA001B0282 /* SportsViewModel.swift */; };
 		B4C1810428E66C70007FB059 /* ColorfulBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1810328E66C70007FB059 /* ColorfulBackgroundView.swift */; };
 		B4C1810628E698D4007FB059 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1810528E698D4007FB059 /* GlassCard.swift */; };
 		B4E386A728DCD2D700E1E4A5 /* TasksTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E386A628DCD2D700E1E4A5 /* TasksTile.swift */; };
@@ -129,6 +141,18 @@
 		B4BBDD0128E76EE6001B0282 /* FullGlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullGlassCard.swift; sourceTree = "<group>"; };
 		B4BBDD0328E76F6E001B0282 /* HeavyGlass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeavyGlass.swift; sourceTree = "<group>"; };
 		B4BBDD0528E91A6F001B0282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B4BBDD0628E929A4001B0282 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		B4BBDD0928E9FF47001B0282 /* DatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewModel.swift; sourceTree = "<group>"; };
+		B4BBDD0B28E9FFB9001B0282 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		B4BBDD0D28EA01AC001B0282 /* CalendarViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewBuilder.swift; sourceTree = "<group>"; };
+		B4BBDD1028EA2641001B0282 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		B4BBDD1228EA2B34001B0282 /* TaintedGlass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaintedGlass.swift; sourceTree = "<group>"; };
+		B4BBDD1528EA3322001B0282 /* DayMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayMenuView.swift; sourceTree = "<group>"; };
+		B4BBDD1728EB3A65001B0282 /* EventsTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTile.swift; sourceTree = "<group>"; };
+		B4BBDD1928EBB04E001B0282 /* EventsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepository.swift; sourceTree = "<group>"; };
+		B4BBDD1B28EBB1D4001B0282 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		B4BBDD1D28EC7D92001B0282 /* SportsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsRepository.swift; sourceTree = "<group>"; };
+		B4BBDD1F28EC94AA001B0282 /* SportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewModel.swift; sourceTree = "<group>"; };
 		B4C1810328E66C70007FB059 /* ColorfulBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulBackgroundView.swift; sourceTree = "<group>"; };
 		B4C1810528E698D4007FB059 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
 		B4E386A628DCD2D700E1E4A5 /* TasksTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTile.swift; sourceTree = "<group>"; };
@@ -259,10 +283,12 @@
 			isa = PBXGroup;
 			children = (
 				B4A45D3128BA55CB00074739 /* UserRepository.swift */,
+				B4BBDD1928EBB04E001B0282 /* EventsRepository.swift */,
 				B44213A128BE6D9B004D3253 /* MenuRepository.swift */,
 				B44213A328BFDA02004D3253 /* BreakfastData.swift */,
 				B44213A528BFDA66004D3253 /* LunchData.swift */,
 				B44213A728BFDA81004D3253 /* DinnerData.swift */,
+				B4BBDD1D28EC7D92001B0282 /* SportsRepository.swift */,
 			);
 			path = DummyServices;
 			sourceTree = "<group>";
@@ -287,6 +313,9 @@
 		B48EA70828B7C9A300102E3B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B4BBDD1428EA32DE001B0282 /* Menu */,
+				B4BBDD0F28EA25DD001B0282 /* Glass Morphism */,
+				B4BBDD0828E9FF16001B0282 /* WeeklyDatePicker */,
 				B4A45D1828B88D6900074739 /* Labels */,
 				B48EA70D28B7CA4200102E3B /* TabBar */,
 				B48EA70C28B7CA3C00102E3B /* Banner */,
@@ -298,10 +327,7 @@
 				B4E386A628DCD2D700E1E4A5 /* TasksTile.swift */,
 				B4E386A828DCE0B600E1E4A5 /* CheckBoxView.swift */,
 				B4E386B628E0C1D600E1E4A5 /* ColorThemePicker.swift */,
-				B4C1810528E698D4007FB059 /* GlassCard.swift */,
-				B4BBDD0128E76EE6001B0282 /* FullGlassCard.swift */,
-				B4BBDCFF28E71855001B0282 /* Glass.swift */,
-				B4BBDD0328E76F6E001B0282 /* HeavyGlass.swift */,
+				B4BBDD1728EB3A65001B0282 /* EventsTile.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -507,6 +533,7 @@
 		B4A45CF428B8448A00074739 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B4BBDD0628E929A4001B0282 /* MenuViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -525,6 +552,7 @@
 		B4A45CF628B8449B00074739 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B4BBDD1F28EC94AA001B0282 /* SportsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -542,6 +570,7 @@
 		B4A45CF828B844A500074739 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B4BBDD1B28EBB1D4001B0282 /* EventsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -581,6 +610,37 @@
 				B4A45D1F28B8964900074739 /* NavigationLinkLabel.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		B4BBDD0828E9FF16001B0282 /* WeeklyDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				B4BBDD0928E9FF47001B0282 /* DatePickerViewModel.swift */,
+				B4BBDD0B28E9FFB9001B0282 /* DatePickerView.swift */,
+				B4BBDD0D28EA01AC001B0282 /* CalendarViewBuilder.swift */,
+			);
+			path = WeeklyDatePicker;
+			sourceTree = "<group>";
+		};
+		B4BBDD0F28EA25DD001B0282 /* Glass Morphism */ = {
+			isa = PBXGroup;
+			children = (
+				B4BBDCFF28E71855001B0282 /* Glass.swift */,
+				B4C1810528E698D4007FB059 /* GlassCard.swift */,
+				B4BBDD0128E76EE6001B0282 /* FullGlassCard.swift */,
+				B4BBDD0328E76F6E001B0282 /* HeavyGlass.swift */,
+				B4BBDD1228EA2B34001B0282 /* TaintedGlass.swift */,
+			);
+			path = "Glass Morphism";
+			sourceTree = "<group>";
+		};
+		B4BBDD1428EA32DE001B0282 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B4BBDD1028EA2641001B0282 /* MenuItemView.swift */,
+				B4BBDD1528EA3322001B0282 /* DayMenuView.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -653,6 +713,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BBDD0A28E9FF47001B0282 /* DatePickerViewModel.swift in Sources */,
 				B4A45D1528B8838000074739 /* LinkLabel.swift in Sources */,
 				B407602A28D60FF3004ABCCD /* ClubsView.swift in Sources */,
 				B48EA71728B7CB1000102E3B /* RouterView.swift in Sources */,
@@ -661,6 +722,7 @@
 				B4A45D3228BA55CB00074739 /* UserRepository.swift in Sources */,
 				B4EC6D8928D6AB6600DF4A0D /* Task.swift in Sources */,
 				B4E386B128DFB42C00E1E4A5 /* LunchView.swift in Sources */,
+				B4BBDD1A28EBB04E001B0282 /* EventsRepository.swift in Sources */,
 				B4A45CE428B7E3EA00074739 /* TasksView.swift in Sources */,
 				B48EA6F828B7C8E200102E3B /* SchoolVerseRedesignTestingApp.swift in Sources */,
 				B4A45D1C28B893CD00074739 /* DestructiveButtonLabel.swift in Sources */,
@@ -676,6 +738,9 @@
 				B44213A628BFDA66004D3253 /* LunchData.swift in Sources */,
 				B4EC6D9128D7866200DF4A0D /* TasksViewModel.swift in Sources */,
 				B4A45D1728B887D100074739 /* ParagraphLabel.swift in Sources */,
+				B4BBDD0E28EA01AC001B0282 /* CalendarViewBuilder.swift in Sources */,
+				B4BBDD0728E929A5001B0282 /* MenuViewModel.swift in Sources */,
+				B4BBDD1C28EBB1D5001B0282 /* EventsViewModel.swift in Sources */,
 				B4A45CEA28B7FA2800074739 /* Color.swift in Sources */,
 				B4A45D2828B9BEF800074739 /* DaySchedule.swift in Sources */,
 				B4A45D3628BABA7500074739 /* PeriodTileAndHeader.swift in Sources */,
@@ -683,24 +748,30 @@
 				B4A45D2028B8964900074739 /* NavigationLinkLabel.swift in Sources */,
 				B4A45CE628B7E40500074739 /* ScheduleView.swift in Sources */,
 				B4E386AB28DFAA6A00E1E4A5 /* MySportsView.swift in Sources */,
+				B4BBDD2028EC94AA001B0282 /* SportsViewModel.swift in Sources */,
 				B4A45D3428BA761100074739 /* DayScheduleTile.swift in Sources */,
 				B4BBDD0028E71856001B0282 /* Glass.swift in Sources */,
+				B4BBDD1E28EC7D92001B0282 /* SportsRepository.swift in Sources */,
 				B48EA71928B7DFC000102E3B /* TabBarItem.swift in Sources */,
 				B4A45D3028BA525100074739 /* Event.swift in Sources */,
 				B4BBDD0428E76F6E001B0282 /* HeavyGlass.swift in Sources */,
+				B4BBDD1628EA3322001B0282 /* DayMenuView.swift in Sources */,
 				B4A45CE228B7E3D200074739 /* HomeView.swift in Sources */,
 				B4BBDD0228E76EE6001B0282 /* FullGlassCard.swift in Sources */,
 				B4A45D0328B8450200074739 /* MenuView.swift in Sources */,
 				B4EC6D8F28D6D14B00DF4A0D /* TasksByDateView.swift in Sources */,
+				B4BBDD1328EA2B34001B0282 /* TaintedGlass.swift in Sources */,
 				B4A45D2628B9B89B00074739 /* Schedule.swift in Sources */,
 				B4A45D0128B844F000074739 /* AccountView.swift in Sources */,
 				B4E386A928DCE0B600E1E4A5 /* CheckBoxView.swift in Sources */,
 				B44213A428BFDA03004D3253 /* BreakfastData.swift in Sources */,
+				B4BBDD0C28E9FFB9001B0282 /* DatePickerView.swift in Sources */,
 				B4A45D2E28B9E7E100074739 /* SVUser.swift in Sources */,
 				B4E386B728E0C1D600E1E4A5 /* ColorThemePicker.swift in Sources */,
 				B48EA70B28B7CA0E00102E3B /* AppView.swift in Sources */,
 				B4A45D2428B93DBB00074739 /* UserColor.swift in Sources */,
 				B4A45D0528B8450D00074739 /* SportsView.swift in Sources */,
+				B4BBDD1828EB3A65001B0282 /* EventsTile.swift in Sources */,
 				B4A45D1E28B8955100074739 /* LinkedAccountsView.swift in Sources */,
 				B4A45CEE28B83C3E00074739 /* MoreInfoCardView.swift in Sources */,
 				B4A45CE828B7E41100074739 /* MoreView.swift in Sources */,
@@ -710,6 +781,7 @@
 				B4A45D0F28B8742D00074739 /* TitleLabel.swift in Sources */,
 				B442139E28BD7106004D3253 /* Food.swift in Sources */,
 				B4A45CD428B7E17400074739 /* TabBarItemViewModifier.swift in Sources */,
+				B4BBDD1128EA2641001B0282 /* MenuItemView.swift in Sources */,
 				B4E386AF28DFB41700E1E4A5 /* BreakfastView.swift in Sources */,
 				B4A45D2228B936FB00074739 /* AccountsViewModel.swift in Sources */,
 				B4E386B328DFB44100E1E4A5 /* DinnerView.swift in Sources */,

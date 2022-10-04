@@ -29,8 +29,6 @@ struct AboutView: View {
                 }
             }
             .navigationTitle("About")
-            .toolbarColorScheme(.dark, for: .navigationBar)
-            //.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

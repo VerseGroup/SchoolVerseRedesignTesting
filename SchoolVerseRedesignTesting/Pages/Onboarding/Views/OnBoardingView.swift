@@ -13,25 +13,30 @@ struct OnBoardingView: View {
             ColorfulBackgroundView()
             
             VStack {
+                Image("VG-ClearBG")
+                    .frame(width: 300, height: 300)
+                    .glassCard()
+                    .padding(30)
+                
                 Text("Hello, \n\n Welcome to SchoolVerse")
                     .foregroundColor(Color.white)
                     .font(.system(size: 50, weight: .bold))
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 175)
+                    .frame(height: 75)
                 
-                Button {
-                    
-                } label: {
+                NavigationLink (destination: AppView(), label: {
                     Text("Begin")
                         .font(.title3)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                         .padding(.vertical, 20)
                         .padding(.horizontal, 60)
-                        .glassCard()
-                }
+                        .glassCardFull()
+                })
+                
+                Spacer()
             }
         }
     }

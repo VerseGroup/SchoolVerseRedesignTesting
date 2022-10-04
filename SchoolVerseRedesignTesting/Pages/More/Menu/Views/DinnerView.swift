@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct DinnerView: View {
+    @ObservedObject var vm: MenuViewModel = MenuViewModel()
+    
     var body: some View {
-        Text("Dinner")
+        CalendarViewBuilder {
+            DayMenuView(menu: vm.menuRepo.menuNow, mealType: "Dinner")
+        }
     }
 }
 
 struct DinnerView_Previews: PreviewProvider {
     static var previews: some View {
-        DinnerView()
+        ZStack {
+            ColorfulBackgroundView()
+            
+            DinnerView()
+                .preferredColorScheme(.dark)
+        }
     }
 }
