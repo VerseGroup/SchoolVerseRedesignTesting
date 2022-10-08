@@ -15,6 +15,9 @@
 		B44213A428BFDA03004D3253 /* BreakfastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44213A328BFDA02004D3253 /* BreakfastData.swift */; };
 		B44213A628BFDA66004D3253 /* LunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44213A528BFDA66004D3253 /* LunchData.swift */; };
 		B44213A828BFDA81004D3253 /* DinnerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44213A728BFDA81004D3253 /* DinnerData.swift */; };
+		B46167B728EF53CF00C868F2 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46167B628EF53CF00C868F2 /* AddTaskView.swift */; };
+		B46167B928EF5A8500C868F2 /* NavPlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46167B828EF5A8500C868F2 /* NavPlusButtonView.swift */; };
+		B46167BB28EF9E6500C868F2 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46167BA28EF9E6500C868F2 /* CustomTextFieldView.swift */; };
 		B48EA6F828B7C8E200102E3B /* SchoolVerseRedesignTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */; };
 		B48EA6FC28B7C8E700102E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA6FB28B7C8E700102E3B /* Assets.xcassets */; };
 		B48EA6FF28B7C8E700102E3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA6FE28B7C8E700102E3B /* Preview Assets.xcassets */; };
@@ -96,6 +99,9 @@
 		B44213A328BFDA02004D3253 /* BreakfastData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastData.swift; sourceTree = "<group>"; };
 		B44213A528BFDA66004D3253 /* LunchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchData.swift; sourceTree = "<group>"; };
 		B44213A728BFDA81004D3253 /* DinnerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerData.swift; sourceTree = "<group>"; };
+		B46167B628EF53CF00C868F2 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		B46167B828EF5A8500C868F2 /* NavPlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPlusButtonView.swift; sourceTree = "<group>"; };
+		B46167BA28EF9E6500C868F2 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		B48EA6F428B7C8E100102E3B /* SchoolVerseRedesignTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolVerseRedesignTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolVerseRedesignTestingApp.swift; sourceTree = "<group>"; };
 		B48EA6FB28B7C8E700102E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -324,10 +330,12 @@
 				B4A45D3328BA761000074739 /* DayScheduleTile.swift */,
 				B4A45D3528BABA7400074739 /* PeriodTileAndHeader.swift */,
 				B4EC6D8A28D6B56900DF4A0D /* NavMenuButtonView.swift */,
+				B46167B828EF5A8500C868F2 /* NavPlusButtonView.swift */,
 				B4E386A628DCD2D700E1E4A5 /* TasksTile.swift */,
 				B4E386A828DCE0B600E1E4A5 /* CheckBoxView.swift */,
 				B4E386B628E0C1D600E1E4A5 /* ColorThemePicker.swift */,
 				B4BBDD1728EB3A65001B0282 /* EventsTile.swift */,
+				B46167BA28EF9E6500C868F2 /* CustomTextFieldView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -453,6 +461,7 @@
 				B4A45CE328B7E3EA00074739 /* TasksView.swift */,
 				B4EC6D8C28D6D13500DF4A0D /* TasksByClassView.swift */,
 				B4EC6D8E28D6D14B00DF4A0D /* TasksByDateView.swift */,
+				B46167B628EF53CF00C868F2 /* AddTaskView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -716,6 +725,7 @@
 				B4BBDD0A28E9FF47001B0282 /* DatePickerViewModel.swift in Sources */,
 				B4A45D1528B8838000074739 /* LinkLabel.swift in Sources */,
 				B407602A28D60FF3004ABCCD /* ClubsView.swift in Sources */,
+				B46167BB28EF9E6500C868F2 /* CustomTextFieldView.swift in Sources */,
 				B48EA71728B7CB1000102E3B /* RouterView.swift in Sources */,
 				B4E386AD28DFAA9000E1E4A5 /* AllSportsView.swift in Sources */,
 				B4EC6D8D28D6D13500DF4A0D /* TasksByClassView.swift in Sources */,
@@ -735,7 +745,9 @@
 				B4A45D1128B8816800074739 /* HeaderLabel.swift in Sources */,
 				B44213A828BFDA81004D3253 /* DinnerData.swift in Sources */,
 				B4A45D2C28B9BF5C00074739 /* Class.swift in Sources */,
+				B46167B728EF53CF00C868F2 /* AddTaskView.swift in Sources */,
 				B44213A628BFDA66004D3253 /* LunchData.swift in Sources */,
+				B46167B928EF5A8500C868F2 /* NavPlusButtonView.swift in Sources */,
 				B4EC6D9128D7866200DF4A0D /* TasksViewModel.swift in Sources */,
 				B4A45D1728B887D100074739 /* ParagraphLabel.swift in Sources */,
 				B4BBDD0E28EA01AC001B0282 /* CalendarViewBuilder.swift in Sources */,

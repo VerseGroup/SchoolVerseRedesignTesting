@@ -11,6 +11,7 @@ struct TasksView: View {
     
     @ObservedObject var userRepo: UserRepository = UserRepository()
     @State var sort: Int = 1
+    @State var showSheet: Bool = false
     
     var body: some View {
         ZStack {
@@ -30,7 +31,7 @@ struct TasksView: View {
             }
             .navigationTitle("Tasks")
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Menu {
                         Picker(selection: $sort, label: Text("Sorting options")) {
                             Text("Sort by Class").tag(0)
@@ -41,7 +42,15 @@ struct TasksView: View {
                         NavMenuButtonView()
                     }
                     
-                } //: ToolbarItem
+                    Button {
+                        showSheet.toggle()
+                    } label: {
+                        NavPlusButtonView()
+                    }
+                    .sheet(isPresented: $showSheet, content: {
+                        AddTaskView(dateChosen: Date.now)
+                    })
+                }
             } //: toolbar
         }
     }

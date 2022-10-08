@@ -11,7 +11,7 @@ import SwiftUI
 struct SchoolVerseRedesignTestingApp: App {
     var body: some Scene {
         WindowGroup {
-            OnBoardingView()
+            AppView()
         }
     }
 }

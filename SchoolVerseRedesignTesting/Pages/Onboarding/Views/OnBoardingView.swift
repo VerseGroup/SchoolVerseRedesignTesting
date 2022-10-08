@@ -18,7 +18,7 @@ struct OnBoardingView: View {
                     .glassCard()
                     .padding(30)
                 
-                Text("Hello, \n\n Welcome to SchoolVerse")
+                Text("Welcome to SchoolVerse")
                     .foregroundColor(Color.white)
                     .font(.system(size: 50, weight: .bold))
                     .multilineTextAlignment(.center)

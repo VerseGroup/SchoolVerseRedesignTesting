@@ -40,7 +40,7 @@ struct TasksTile: View {
         .foregroundColor(Color.white)
         .padding()
         .padding(.leading, 10)
-        .glassCard()
+        .glassCardFull()
     } //: body
 } //: TasksTile
 
