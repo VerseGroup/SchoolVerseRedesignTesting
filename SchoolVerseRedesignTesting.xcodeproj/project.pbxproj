@@ -18,6 +18,7 @@
 		B46167B728EF53CF00C868F2 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46167B628EF53CF00C868F2 /* AddTaskView.swift */; };
 		B46167B928EF5A8500C868F2 /* NavPlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46167B828EF5A8500C868F2 /* NavPlusButtonView.swift */; };
 		B46167BB28EF9E6500C868F2 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46167BA28EF9E6500C868F2 /* CustomTextFieldView.swift */; };
+		B465CF7328F7AA5000936C13 /* CustomSegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B465CF7228F7AA5000936C13 /* CustomSegmentedPicker.swift */; };
 		B48EA6F828B7C8E200102E3B /* SchoolVerseRedesignTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */; };
 		B48EA6FC28B7C8E700102E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA6FB28B7C8E700102E3B /* Assets.xcassets */; };
 		B48EA6FF28B7C8E700102E3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48EA6FE28B7C8E700102E3B /* Preview Assets.xcassets */; };
@@ -102,6 +103,7 @@
 		B46167B628EF53CF00C868F2 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		B46167B828EF5A8500C868F2 /* NavPlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPlusButtonView.swift; sourceTree = "<group>"; };
 		B46167BA28EF9E6500C868F2 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		B465CF7228F7AA5000936C13 /* CustomSegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedPicker.swift; sourceTree = "<group>"; };
 		B48EA6F428B7C8E100102E3B /* SchoolVerseRedesignTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolVerseRedesignTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48EA6F728B7C8E100102E3B /* SchoolVerseRedesignTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolVerseRedesignTestingApp.swift; sourceTree = "<group>"; };
 		B48EA6FB28B7C8E700102E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 				B4E386B628E0C1D600E1E4A5 /* ColorThemePicker.swift */,
 				B4BBDD1728EB3A65001B0282 /* EventsTile.swift */,
 				B46167BA28EF9E6500C868F2 /* CustomTextFieldView.swift */,
+				B465CF7228F7AA5000936C13 /* CustomSegmentedPicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -749,6 +752,7 @@
 				B44213A628BFDA66004D3253 /* LunchData.swift in Sources */,
 				B46167B928EF5A8500C868F2 /* NavPlusButtonView.swift in Sources */,
 				B4EC6D9128D7866200DF4A0D /* TasksViewModel.swift in Sources */,
+				B465CF7328F7AA5000936C13 /* CustomSegmentedPicker.swift in Sources */,
 				B4A45D1728B887D100074739 /* ParagraphLabel.swift in Sources */,
 				B4BBDD0E28EA01AC001B0282 /* CalendarViewBuilder.swift in Sources */,
 				B4BBDD0728E929A5001B0282 /* MenuViewModel.swift in Sources */,
